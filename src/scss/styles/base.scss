@@ -1,0 +1,30 @@
+a, ul, li, p, h1, h2, h3, h4, h5, address {
+    text-decoration: none;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #060606;
+    font-family: Inter, Arial, sans-serif;
+    font-size: $BaseFontsize;
+    font-weight: 400;
+    color: #FFF;
+} 

@@ -1,0 +1,23 @@
+.button {
+    border-radius: 4px;
+    background: $MainGradientRed;
+    padding: 12px;
+    font-weight: 700;
+    color: #FFF;
+
+    &_decorative-gray {
+        display: flex;
+        align-items: center;
+        background: #1E1E1E;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    &_transparent-red {
+        background: transparent;
+        border: solid 1px #CA0000;
+    }
+    &_transparent-gray {
+        background: transparent;
+        border: solid 1px #0F0F0F;        
+    }
+}

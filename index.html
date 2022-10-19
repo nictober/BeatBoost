@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__side-wrapper">
+            <a href="#" class="header__logo">
+                <!-- <svg>
+                    <use xlink:href="src/img/svg/sprite.svg#beatboost-logo1"></use>
+                </svg> -->
+                <img src="src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="beatboost-logo">
+            </a>
+            <form class="search-form">
+                <div class="search-form__hint-block">
+                    <!-- <img src="src/img/svg/search-icon.svg" alt="magnifier image"> -->
+                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
+                    <div class="search-form__categories">
+                        <div class="search-form__category">Биты</div>
+                        <img src="src/img/svg/arrow-down.svg" alt="arrow down icon">
+                    </div>
+                </div>
+            </form>
+            <nav class="header__site-menu">
+                <ul class="site-menu">
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Поиск</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Лента</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Треки</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Релизы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__side-wrapper">
+            <div class="login-block">
+                <div class="login-block__register">Создать аккаунт</div>
+                <div class="login-block__sign-in">Войти</div>
+            </div>
+            <div class="header__begin-button button">Начать продавать</div>
+            <div class="header__cart-vidget cart-vidget">
+                <img src="src/img/svg/cart-shopping.svg" alt="cart icon">
+                <div class="cart-vidget__counter">1</div>
+                <img src="src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
+            </div>
+        </div>
+
+    </header>
+
+    <div class="wrapper">
+
+        <section class="hero">
+            <div class="hero__announce">
+                <div class="hero__button button button_decorative-gray">
+                    <img src="src/img/svg/lightningRed.svg" alt="beatboost red lightning">
+                    <span>№1 в СНГ</span>
+                </div>
+                <h1 class="hero__title">Маркетплейс для продажи аудио-контента</h1>
+                <div class="hero__subtitle">Самый лучший способ продавать своё творчество в России, удобнейший способ искать свою музыку.</div>
+                <un class="hero__buttons">
+                    <li class="hero__button button button_red">Искать биты</li>
+                    <li class="hero__button button button_transparent-red">Войти</li>
+                </un>
+            </div>
+            <div class="hero__playlist">
+                <div class="hero__playlist-cover">
+                    <img src="src/img/notVector/album-cover1.png" alt="daily playlist cover image" class="hero__playlist-cover-image">
+                    <div class="hero__playlist-shadow-container">
+                        <img src="src/img/svg/hero-playlist-shadow.svg" alt="shadow image" class="hero__playlist-shadow">
+                    </div>
+                </div>
+                <ul class="hero__playlist-info">
+                    <div class="hero__playlist-announce-button button">
+                        <span>Плейлист дня</span>
+                        <img src="src/img/svg/lightningWhite.svg" alt="beatboost white lightning"/>
+                    </div>
+                    <div class="hero__playlist-about">
+                        <div class="hero__playlist-title">Arhvic</div>
+                        <div class="hero__playlist-author">by Damon Liver</div>
+                    </div>
+                    <div class="hero__playlist-statistic">
+                        <div class="hero__playlist-track-count">26 tracks</div>
+                        <img src="src/img/svg/lightningRed.svg" alt="beatboost red lightning">
+                        <div class="hero__playlist-views-count">1231 views</div>
+                    </div>
+                </ul>
+                
+            </div>
+        </section>
+
+        <section class="releases">
+            <div class="releases__top-content-wrapper">
+                <h2 class="releases__title page-title">Популярные релизы</h2>
+                <div class="releases__navigation nav-arrows">
+                    <img src="src/img/svg/arrow-left.svg" alt="navigation arrow icon" class="nav-arrows__left">
+                    <img src="src/img/svg/arrow-left.svg" style="transform: rotate(0.5turn);" alt="navigation arrow icon" class="nav-arrows__right">
+                </div>
+            </div>
+            <ul class="releases__feed">
+                <li class="playlist">
+                    <img src="src/img/notVector/heartless-cover-releases.png" alt="daily playlist cover image" class="playlist__cover">
+                    <div class="playlist__shadow-container">
+                        <img src="src/img/svg/releases-shadow-red.svg" alt="shadow image" class="playlist__cover-shadow">
+                    </div>
+                    <ul class="playlist__info playlist__info_hero">
+                        <div class="playlist__about">
+                            <div class="playlist__statistic">
+                                <div class="playlist__track-count">26 tracks</div>
+                                <img src="src/img/svg/lightning-gray.svg" alt="BeatBoost gray lightning">
+                                <div class="playlist__views-count">1231 views</div>
+                            </div>
+                            <div class="playlist__title">Arhvic</div>
+                            <div class="playlist__author">Damon Liver</div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="playlist">
+                    <img src="src/img/notVector/album-cover2.png" alt="daily playlist cover image" class="playlist__cover">
+                    <div class="playlist__shadow-container">
+                        <img src="src/img/svg/releases-shadow-red.svg" alt="shadow image" class="playlist__cover-shadow">
+                    </div>
+                    <ul class="playlist__info playlist__info_hero">
+                        <div class="playlist__about">
+                            <div class="playlist__statistic">
+                                <div class="playlist__track-count">26 tracks</div>
+                                <img src="src/img/svg/lightning-gray.svg" alt="BeatBoost gray lightning">
+                                <div class="playlist__views-count">1231 views</div>
+                            </div>
+                            <div class="playlist__title">Arhvic</div>
+                            <div class="playlist__author">Damon Liver</div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="playlist">
+                    <img src="src/img/notVector/album-cover3.png" alt="daily playlist cover image" class="playlist__cover">
+                    <div class="playlist__shadow-container">
+                        <img src="src/img/svg/releases-shadow-red.svg" alt="shadow image" class="playlist__cover-shadow">
+                    </div>
+                    <ul class="playlist__info playlist__info_hero">
+                        <div class="playlist__about">
+                            <div class="playlist__statistic">
+                                <div class="playlist__track-count">26 tracks</div>
+                                <img src="src/img/svg/lightning-gray.svg" alt="BeatBoost gray lightning">
+                                <div class="playlist__views-count">1231 views</div>
+                            </div>
+                            <div class="playlist__title">Arhvic</div>
+                            <div class="playlist__author">Damon Liver</div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="playlist">
+                    <img src="src/img/notVector/album-cover4.png" alt="daily playlist cover image" class="playlist__cover">
+                    <div class="playlist__shadow-container">
+                        <img src="src/img/svg/releases-shadow-red.svg" alt="shadow image" class="playlist__cover-shadow">
+                    </div>
+                    <ul class="playlist__info playlist__info_hero">
+                        <div class="playlist__about">
+                            <div class="playlist__statistic">
+                                <div class="playlist__track-count">26 tracks</div>
+                                <img src="src/img/svg/lightning-gray.svg" alt="BeatBoost gray lightning">
+                                <div class="playlist__views-count">1231 views</div>
+                            </div>
+                            <div class="playlist__title">Arhvic</div>
+                            <div class="playlist__author">Damon Liver</div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="playlist">
+                    <img src="src/img/notVector/heartless-cover-releases.png" alt="daily playlist cover image" class="playlist__cover">
+                    <div class="playlist__shadow-container">
+                        <img src="src/img/svg/releases-shadow-red.svg" alt="shadow image" class="playlist__cover-shadow">
+                    </div>
+                    <ul class="playlist__info playlist__info_hero">
+                        <div class="playlist__about">
+                            <div class="playlist__statistic">
+                                <div class="playlist__track-count">26 tracks</div>
+                                <img src="src/img/svg/lightning-gray.svg" alt="BeatBoost gray lightning">
+                                <div class="playlist__views-count">1231 views</div>
+                            </div>
+                            <div class="playlist__title">Arhvic</div>
+                            <div class="playlist__author">Damon Liver</div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="genres">
+            <div class="genres__genres-feed-wrapper">
+                <div class="genres__top-content-wrapper">
+                    <h2 class="releases__title page-title">Популярные жанры</h2>
+                    <div class="releases__navigation nav-arrows">
+                        <img src="src/img/svg/arrow-left.svg" alt="navigation arrow icon" class="nav-arrows__left">
+                        <img src="src/img/svg/arrow-left.svg" style="transform: rotate(0.5turn);" alt="navigation arrow icon">
+                    </div>
+                </div>
+                <ul class="genres__feed">
+                    <li class="genres__card">
+                        <img src="src/img/notVector/genres-hiphop.png" alt="genre-styled picture" class="genres__img">
+                        <!-- <div class="fokin_image"></div> -->
+                        <div class="genres__button button">
+                            <span class="genres__title">Hip-Hop</span>
+                        </div>
+                    </li>
+                    <li class="genres__card">
+                        <img src="src/img/notVector/genres-rock.png" alt="genre-styled picture" class="genres__img">
+                        <div class="genres__button button">
+                            <span class="genres__title">Rock</span>
+                        </div>
+                    </li>
+                    <li class="genres__card">
+                        <img src="src/img/notVector/genres-indieRock.png" alt="genre-styled picture" class="genres__img">
+                        <div class="genres__button button">
+                            <span class="genres__title">Indie Rock</span>
+                        </div>
+                    </li>
+                    <li class="genres__card">
+                        <img src="src/img/notVector/genres-vaporWave.png" alt="genre-styled picture" class="genres__img">
+                        <div class="genres__button button">
+                            <span class="genres__title">VaporWave</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="genres__genre-hashtag-block">
+                <!-- молния -->
+                <h2 class="genres__hashtag-title page-title">ϟПопулярное</h2>
+                <ul class="genres__hashtags">
+                    <li class="genres__hashtag button button_transparent-gray">#Rock</li>
+                    <li class="genres__hashtag button button_transparent-gray">#Rock</li>
+                    <li class="genres__hashtag button button_transparent-gray">#160bpm</li>
+                    <li class="genres__hashtag button button_transparent-gray">#VaporWave</li>
+                    <li class="genres__hashtag button button_transparent-gray">#Flight</li>
+                    <li class="genres__hashtag button button_transparent-gray">#160bpm</li>
+                    <li class="genres__hashtag button button_transparent-gray">#Rock</li>
+                    <li class="genres__hashtag button button_transparent-gray">#Rock</li>
+                    <li class="genres__hashtag button button_transparent-gray">#160bpm</li>
+                    <li class="genres__hashtag button button_transparent-gray">#Rock</li>
+                    <li class="genres__hashtag button button_transparent-gray">#Rock</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="authors">
+            <div class="authors__top-content-wrapper">
+                <div class="authors__title page-title">Битмейкеры</div>
+                <div class="authors__navigation nav-arrows">
+                    <img src="src/img/svg/arrow-left.svg" alt="navigation arrow icon" class="nav-arrows__left">
+                    <img src="src/img/svg/arrow-left.svg" style="transform: rotate(0.5turn);" alt="navigation arrow icon">
+                </div>
+            </div>
+            <ul class="authors__feed">
+                <li class="authors__card">
+                    <img src="src/img/notVector/author1.png" alt="music maker`s author__avatar" class="authors__avatar">
+                    <span class="authors__name">Mr Incredible</span>
+                    <span class="authors__tagname">@MusicByMr</span>
+                </li>
+                <li class="authors__card">
+                    <img src="src/img/notVector/author2.png" alt="music maker`s author__avatar" class="authors__avatar">
+                    <span class="authors__name">Mr Incredible</span>
+                    <span class="authors__tagname">@MusicByMr</span>
+                </li>
+                <li class="authors__card">
+                    <img src="src/img/notVector/author3.png" alt="music maker`s author__avatar" class="authors__avatar">
+                    <span class="authors__name">Mr Incredible</span>
+                    <span class="authors__tagname">@MusicByMr</span>
+                </li>
+                <li class="authors__card">
+                    <img src="src/img/notVector/author4.png" alt="music maker`s author__avatar" class="authors__avatar">
+                    <span class="authors__name">Mr Incredible</span>
+                    <span class="authors__tagname">@MusicByMr</span>
+                </li>
+                <li class="authors__card">
+                    <img src="src/img/notVector/author5.png" alt="music maker`s author__avatar" class="authors__avatar">
+                    <span class="authors__name">Mr Incredible</span>
+                    <span class="authors__tagname">@MusicByMr</span>
+                </li>
+                <li class="authors__card">
+                    <img src="src/img/notVector/author6.png" alt="music maker`s author__avatar" class="authors__avatar">
+                    <span class="authors__name">Mr Incredible</span>
+                    <span class="authors__tagname">@MusicByMr</span>
+                </li>
+            </ul>
+        </section>
+
+        <article class="find-beats-promo">
+            <div class="find-beats-promo__img-wrapper">
+                <img src="src/img/notVector/find-beats-promo1.png" alt="BeatBoost interface" class="find-beats-promo__behind-img">
+                <img src="src/img/notVector/find-beats-promo2.png" alt="BeatBoost interface" class="find-beats-promo__ahead-img">
+            </div>
+            <div class="find-beats-promo__text">
+                <h2 class="find-beats-promo__title">Искать биты - это быстро и удобно</h2>
+                <div class="find-beats-promo__subtitle">Удобный поиск по тегам коллекций, исполнителей и битов: все в одном месте
+                </div>
+                <div class="find-beats-promo__button button">Искать биты</div>
+            </div>
+        </article>
+
+        <article class="buff-promo">
+            <div class="buff-promo__wrapper">
+                <div class="buff-promo__text-wrapper">
+                    <h2 class="buff-promo__title title">Продавай больше с BeatBoost</h2>
+                    <!-- <span class="buff-promo__buff-icon">Buffϟ</span>  -->
+                    <!-- span? -->
+                    <div class="buff-promo__text">Самый лучший способ продавать своё творчество в России, удобнейший способ искать свою музыку.</div>
+                    <div class="buff-promo__timeline-vidget timeline-vidget">
+                        <div class="timeline-vidget__days-total">7 дней бесплатно</div>
+                        <div class="timeline-vidget__timeline"></div>
+                        <div class="timeline-vidget__days-untill">Напишем на почту за 2 дня</div>
+                    </div>
+                    <div class="buff-promo__button button">Узнать больше</div>
+                </div>
+            </div>
+
+
+        </article>
+    </div>
+    <footer class="footer">
+        <div class="footer__main-block">
+            <div class="footer__login-block ">
+                <div class="footer__top-wrapper">
+                    <h4 class="footer__title">Начни сейчасϟ</h4>
+                    <div class="footer__button-wrapper">
+                        <a href="#" class="footer__login button button_red">Войти</a>
+                        <a href="#" class="footer__login button button_gray">Cоздать аккаунт</a>
+                    </div>
+                </div>
+                <span class="footer__rights">© 2022 BeatBoost. Все права защищены</span>
+            </div>
+            <ul class="footer__link-blocks">
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">BeatBoost</h5>
+                    <a href="#">Главная</a>
+                    <a href="#">Лента</a>
+                    <a href="#">Поиск</a>
+                    <a href="#">Треки</a>
+                    <a href="#">Коллекции</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Социальные сети</h5>
+                    <a href="#">Instagram</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Vkontakte</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Помощь</h5>
+                    <a href="#">BeatBoost Buff</a>
+                    <a href="#">Регистрация</a>
+                    <a href="#">Цены</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Войти</a>
+                </li>
+            </ul>
+            <div class="footer__side-block">
+                <img src="src/img/svg/beatBoost-logo.svg" alt="BeatBoost logo" class="footer__logo">
+                <span class="footer__privacy">Privacy Policy</span>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src= "./dist/index.js" type="module"></script>
+</body>
+</html>

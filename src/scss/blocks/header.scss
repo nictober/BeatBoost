@@ -1,0 +1,25 @@
+.header {
+    background: #0F0F0F;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #B8B8B8;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 64px;
+
+    &__logo {
+        margin-right: 24px;
+    }
+    &__side-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__site-menu {
+        font-weight: 600;
+    }
+    &__begin-button {
+        margin-right: 32px;
+    }
+
+}

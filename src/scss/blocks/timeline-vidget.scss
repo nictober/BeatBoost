@@ -1,0 +1,32 @@
+.timeline-vidget {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    &__days-total {
+        font-size: 12px;
+        font-weight: 400px;
+
+    }
+    &__timeline {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+    }
+    &__days-untill {
+        font-size: 10px;
+        font-weight: 700;
+        align-self: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 6px;
+            /* width: 0px; */
+            border-left: 0.5px solid white;
+            position: absolute;
+            top: -7px;
+            left: 61px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.releases {
+    display: flex;
+    flex-direction: column;
+    background-color: #0F0F0F;
+    border-radius: 8px;
+    padding: 40px;
+    gap: 32px;
+    margin-bottom: 80px;
+
+    &__feed {
+        display: flex;
+        justify-content: space-around;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__top-content-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
