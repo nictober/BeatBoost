@@ -1,9 +1,12 @@
 @import "styles/fonts.scss";
-@import "styles/base.scss";
 @import "styles/constants.scss";
+@import "styles/media.scss";
+@import "styles/base.scss";
+@import "styles/button.scss";
+@import "styles/feed.scss";
+
 @import "blocks/authors.scss";
 @import "blocks/buff-promo.scss";
-@import "blocks/button.scss";
 @import "blocks/cart-vidget.scss";
 @import "blocks/find-beats-promo.scss";
 @import "blocks/footer.scss";
@@ -20,19 +23,29 @@
 @import "blocks/timeline-vidget.scss";
 @import "blocks/wrapper.scss";
 
+.burger-menu {
+    display: none;
+    @include laptops {
+        display: block;
+        order: -1;
+        margin-right: 12px;
+    }
+    @include phones {
+        display: block;
+        order: 3;
+    }
+}
+.burger-menu__element1, .burger-menu__element2, .burger-menu__element3 {
+    width: 16px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    transition: 0.3s;
+    border-radius: 0.83px;
+}
+.profile {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    &__avatar {
+        border-radius: 50%;
+    }
+}

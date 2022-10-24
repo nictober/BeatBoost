@@ -1,3 +1,9 @@
 .nav-arrows {
     display: flex;
+
+    &>img{
+        @include phones {
+            width: 24px;
+        }
+    }
 }

@@ -1,15 +1,29 @@
 .footer {
     border-top: solid 2px #0f0f0f;
     padding: 48px;
+    @include phones {
+        padding: 32px 40px 64px 32px;
+        border-top: none;
+    }
 
     &__main-block {
         display: flex;
         justify-content: space-between;
+        @include phones {
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
     }
     &__login-block {
         display:flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-right: 72px;
+        flex-shrink: 0;
+        @include phones {
+            margin-right: 0;
+        }
     }
     &__login {
         font-size: 12px;
@@ -19,16 +33,28 @@
         align-self: flex-end;
         font-weight: 400;
         font-size: 12px;
+        @include phones {
+            max-width: 55%;
+        }
     }
     &__title {
         font-weight: 700;
         font-size: 24px;
         margin-bottom: 44px;
+        @include phones {
+            margin-bottom: 20px;
+        }
     }
     &__link-blocks {
         display: flex;
-        column-gap: 71px;
+        flex-wrap: wrap;
+        gap: 71px;
         margin-bottom: 72px;
+        @include phones {
+            flex-direction: column;
+            row-gap: 48px;
+            margin-bottom: 0px;
+        }
     }
     &__link-block {
         display: flex;
@@ -49,9 +75,18 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
+        @include phones {
+            order: -1;
+            align-items: flex-start;
+        }
+    }
+    &__copyright-block {
+        display: flex;
+        justify-content: space-between;
     }
     &__logo {
-        width: 180px;
+        flex-shrink: 0;
+        min-width: 180px;
     }
     &__privacy {
         font-weight: 400;

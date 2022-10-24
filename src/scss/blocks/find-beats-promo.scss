@@ -4,23 +4,37 @@
     justify-content: center;
     column-gap: 48px;
     margin-bottom: 96px;
-
-    &__img-wrapper {
-        position: relative;
+    @include phones {
+        flex-direction: column;
     }
+
+    // &__img-wrapper {
+    //     position: relative;
+    //     &>img {
+    //         @include phones {
+    //             max-width: 80%;
+    //         }
+    //     }
+    // }
     &__text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         max-width: 30%;
         gap: 32px;
+        @include phones {
+            max-width: inherit;
+        }
     }
-    &__behind-img {
-        transform: translate(100px, -40px);
-    }
+    // &__behind-img {
+    //     transform: translate(100px, -40px);
+    // }
     &__title {
         font-size: 48px;
         font-weight: 600px;
+        @include phones {
+            font-size: 32px;
+        }
     }
     &__subtitle {
         font-size: 20px;

@@ -1,0 +1,18 @@
+.feed {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    &>li {
+        flex-shrink: 0;
+        @include phones {
+            max-width: 141px;
+        }
+    }
+}

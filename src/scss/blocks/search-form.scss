@@ -4,6 +4,7 @@
     &__hint-block {
         display: flex;
         align-items: center;
+        position: relative;
     }
     &__input {
         background: #1D1D1D;
@@ -11,17 +12,33 @@
         border-radius: 4px;
         height: 35px;
         width: 315px;
-        flex: 1;
         color: #FFF;
         
         &::placeholder {
-            background: url(src/img/svg/search-icon.svg) no-repeat;
-            padding-left: 20px;
+            background: url(../src/img/svg/search-icon.svg) no-repeat;
+            background-position: 12px;
+            padding-left: 32px;
         }
     }
     &__categories {
         display: flex;
         position: absolute;
-        left: 400px;
+        left: 250px;
+        margin-right: 5px;
+
+        @include phones {
+            left: 140px;
+        }
+    }
+    @extend %media-phones-none;
+}
+
+.search-form-mobile {
+    @extend .search-form;
+    display: none;
+    width: 192px;
+
+    @include phones {
+        display: block;
     }
 }

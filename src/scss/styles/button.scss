@@ -4,7 +4,15 @@
     padding: 12px;
     font-weight: 700;
     color: #FFF;
+    white-space: nowrap;
+    @include phones {
+        font-size: 12px;
+    }
 
+    &_gray {
+        align-items: center;
+        background: #1E1E1E;
+    }
     &_decorative-gray {
         display: flex;
         align-items: center;

@@ -4,7 +4,14 @@
     margin-right: 32px;
     gap: 14px;
     position: relative;
+    white-space: nowrap;
+    @include phones {
+        display: none;
+    }
 
+    &__sign-in {
+        @extend %media-tablets-none;
+    }
     &__register {
 
         &::after {
@@ -12,9 +19,10 @@
             border-left: solid 1px white;
             position: absolute;
             height: 22.5px;
-            right: 42px;
+            right: 43px;
             top: -4px;
-
+            @extend %media-tablets-none;
         }
     }
+
 }

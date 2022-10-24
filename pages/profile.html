@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
+    <link rel="stylesheet" href="../dist/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__side-wrapper">
+            <a href="#" class="header__logo">
+                <!-- <svg>
+                    <use xlink:href="src/img/svg/sprite.svg#beatboost-logo1"></use>
+                </svg> -->
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="beatboost-logo">
+            </a>
+            <form class="search-form">
+                <div class="search-form__hint-block">
+                    <!-- <img src="../src/img/svg/search-icon.svg" alt="magnifier image"> -->
+                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
+                    <div class="search-form__categories">
+                        <div class="search-form__category">Биты</div>
+                        <img src="../src/img/svg/arrow-down.svg" alt="arrow down icon">
+                    </div>
+                </div>
+            </form>
+            <nav class="header__site-menu">
+                <ul class="site-menu">
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Поиск</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Лента</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Треки</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Релизы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__side-wrapper">
+            <div class="login-block">
+                <div class="login-block__register">Создать аккаунт</div>
+                <div class="login-block__sign-in">Войти</div>
+            </div>
+            <div class="header__begin-button button">Начать продавать</div>
+            <div class="header__cart-vidget cart-vidget">
+                <img src="../src/img/svg/cart-shopping.svg" alt="cart icon">
+                <div class="cart-vidget__counter">1</div>
+                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
+            </div>
+        </div>
+
+    </header>
+    <div class="wrapper">
+        <section class="profile">
+            <div class="profile__avatar">
+                <img src="../src/img/notVector/author1.png" alt="user profile avatar">
+            </div>
+            <div class="profile__side-block">
+                <div class="profile__track-count">26 tracks</div>
+                <img src="../src/img/svg/lightning-gray.svg" alt="BeatBoost gray lightning">
+                <div class="profile__name">Саша Викторов</div>
+                <ul class="profile__hashtags">
+                    <li class="profile__hashtag button button_transparent-gray">#Rock</li>
+                    <li class="profile__hashtag button button_transparent-gray">#Rock</li>
+                    <li class="profile__hashtag button button_transparent-gray">#160bpm</li>
+                    <li class="profile__hashtag button button_transparent-gray">#VaporWave</li>
+                </ul>
+                <un class="profile__buttons">
+                    <li class="profile__button button button_red">Искать биты</li>
+                    <li class="profile__button button button_transparent-red">Войти</li>
+                </un>
+            </div>
+            <div class="profile__navigation">
+                   
+            </div>
+        </section>
+
+    </div>
+    <footer class="footer">
+        <div class="footer__main-block">
+            <div class="footer__login-block ">
+                <div class="footer__top-wrapper">
+                    <h4 class="footer__title">Начни сейчасϟ</h4>
+                    <div class="footer__button-wrapper">
+                        <a href="#" class="footer__login button button_red">Войти</a>
+                        <a href="#" class="footer__login button button_gray">Cоздать аккаунт</a>
+                    </div>
+                </div>
+                <span class="footer__rights">© 2022 BeatBoost. Все права защищены</span>
+            </div>
+            <ul class="footer__link-blocks">
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">BeatBoost</h5>
+                    <a href="#">Главная</a>
+                    <a href="#">Лента</a>
+                    <a href="#">Поиск</a>
+                    <a href="#">Треки</a>
+                    <a href="#">Коллекции</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Социальные сети</h5>
+                    <a href="#">Instagram</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Vkontakte</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Помощь</h5>
+                    <a href="#">BeatBoost Buff</a>
+                    <a href="#">Регистрация</a>
+                    <a href="#">Цены</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Войти</a>
+                </li>
+            </ul>
+            <div class="footer__side-block">
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="BeatBoost logo" class="footer__logo">
+                <span class="footer__privacy">Privacy Policy</span>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src= "./dist/index.js" type="module"></script>
+</body>
+</html>

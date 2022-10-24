@@ -1,5 +1,6 @@
 .playlist {
     position: relative;
+    flex-shrink: 0;
 
     &__statistic {
         display: flex;
@@ -25,5 +26,10 @@
         position: absolute;
         top: 26px;
         left: 7px;
+        @include phones {
+            top: 16px;
+            left: 6px;
+            width: 92%;
+        }
     }
 }

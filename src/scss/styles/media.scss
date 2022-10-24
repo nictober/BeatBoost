@@ -1,0 +1,39 @@
+// @function rem($px) {
+//     @return $px / $BaseFontsize + 0rem;
+// }
+
+@mixin phones {
+    @media screen and (max-width: $Phones) {
+        @content;
+    }
+}
+@mixin tablets {
+    @media screen and (max-width: $Tablets) {
+        @content;
+    }
+}
+@mixin laptops {
+    @media screen and (max-width: $Laptops) {
+        @content;
+    }
+}
+%only-desktop-visible {
+    @include laptops {
+        display: none;
+    }
+}
+%only-non-desktop-visible {
+    @media screen and (min-width: $Laptops) {
+        display: none;
+    }
+}
+%media-tablets-none {
+    @include tablets{
+        display: none;
+    }
+}
+%media-phones-none {
+    @include phones{
+        display: none;
+    }
+}

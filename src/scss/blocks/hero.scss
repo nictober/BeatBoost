@@ -3,39 +3,77 @@
     justify-content: space-around;
     padding-top: 95px;
     margin-bottom: 110px;
+    padding-right: 20px;
+    @include tablets {
+        flex-direction: column-reverse;
+        row-gap: 72px;
+    }
+    @include phones {
+        flex-direction: column-reverse;
+        row-gap: 72px;
+        padding-top: 20px;
+        margin-bottom: 56px;
+    }
 
     &__announce {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         max-width: 432px;
+        @include tablets {
+            max-width: 100%;
+        }
     }
     &__button {
         margin-bottom: 10px;
     }
     &__playlist {
         position: relative;
-
+        
+        @include tablets {
+            width: 80%;
+        }
+        @include phones {
+            width: 100%;
+        }
     }
     &__playlist-cover-image {
         position: relative;
         z-index: 50;
+        @include tablets {
+            width: 100%;
+        }
+        @include phones {
+            width: 96%;
+        }
     }
     &__playlist-shadow {
         position: absolute;
-        min-width: 110%;
+        min-width: 109%;
         left: 10px;
         top: 10px;
+        // @include tablets {
+        //     width: 106%;
+        // }
+        @include phones {
+            min-width: 103%;
+        }
     }
     &__title {
         font-size: 56px;
         font-weight: 700;
         margin-bottom: 32px;
+        @include phones {
+            font-size: 32px;
+        }
     }
     &__subtitle {
         font-weight: 400;
         font-size: 20px;
         margin-bottom: 40px;
+        @include phones {
+            font-size: 16px;
+        }
     }
     &__buttons {
         display: flex;
@@ -50,28 +88,50 @@
         z-index: 100;
         top: 324px;
         left: 30px;
+        @include phones {
+            top: 170px;
+            left: 20px;
+        }
     }
     &__playlist-announce-button {
         font-weight: 600;
         font-size: 10px;
+        display: flex;
+        padding: 8px 12px;
+        @include phones {
+            font-size: 6px;
+            padding: 5px 7px;
+            border-radius: 2px;
+        }
+        &>img {
+            width: 6px;
+        }
     }
     &__playlist-title {
         font-weight: 600;
         font-size: 14px;
+        @include phones {
+            font-size: 8px;
+        }
     }
     &__playlist-author{
         font-weight: 500;
         font-size: 10px;
+        @include phones {
+            font-size: 6px;
+        }
     }
     &__playlist-statistic {
         display: flex;
         gap: 2px;
         font-weight: 300;
         font-size: 10px;   
-        color: #B8B8B8;  
-    }
-    &__playlist-announce-button{
-        display: flex;
-        padding: 8px 12px;
+        color: #B8B8B8;
+        @include phones {
+            font-size: 6px;
+        } 
+        &>img {
+            width: 5px;
+        }
     }
 }
