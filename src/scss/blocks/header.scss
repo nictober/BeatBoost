@@ -12,16 +12,16 @@
         margin-right: 16px;
         flex-shrink: 0;
         @extend %only-desktop-visible;
-        @include phones {
-            display: block;
-        }
+        // @include phones {
+        //     display: block;
+        // }
     }
     &__logo-mobile {
         margin-right: 12px;
         flex-shrink: 0;
         @extend %only-non-desktop-visible;
         @include phones {
-            display: none;
+            display: block;
         }
     }
     &__side-wrapper {

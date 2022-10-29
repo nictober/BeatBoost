@@ -10,6 +10,35 @@
     @include phones {
         padding: 20px;
     }
+    &_profile {
+        padding: 0;
+        background: none;
+        @include phones {
+
+        }
+        & .playlist {
+            @include phones {
+                max-width: inherit;
+            }
+        }
+        & .releases__feed {
+            @include phones {
+                flex-direction: column;
+            }
+        }
+        & .playlist__cover {
+            @include phones {
+                width: 100%;
+            }
+        }
+        & .playlist__cover-shadow {
+            @include phones {
+                top: 30px;
+                left: 10px;
+                width: 92%;
+            }
+        }
+    }
 
     &__feed {
         gap: 24px;

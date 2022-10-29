@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
+    <link rel="stylesheet" href="../dist/main.css">
+</head>
+<body>
+
+    <div class="wrapper login-wrapper">
+        <div class="login">
+            <a href="#" class="header__logo">
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="login__logo">
+            </a>
+            <span class="login__title">Создать аккаунт</span>
+            <form action="#" class="login__form">
+                <input placeholder="Придумайте имя" type="text" class="login__input">
+                <input placeholder="E-mail" type="text" class="login__input">
+                <input placeholder="Придумайте пароль" type="text" class="login__input">
+                <div class="login__button button button_login">Создать</div>
+                <div class="login__hint">Уже есть аккаунт? <a class="login__to-login" href="#">Войти</a></div>
+            </form>
+            <ul class="login__social-block">
+               <li class="login__social-item">
+                    <img src="../src/img/svg/SoundCloud.svg" alt="" class="login__social-img">
+                    <span class="login__social-name">SoundCloud</span>
+               </li> 
+               <li class="login__social-item">
+                    <img src="../src/img/svg/Google.svg" alt="" class="login__social-img">
+                    <span class="login__social-name">Google</span>
+               </li> 
+               <li class="login__social-item">
+                    <img src="../src/img/svg/Facebook.svg" alt="" class="login__social-img">
+                    <span class="login__social-name">Facebook</span>
+               </li> 
+            </ul>
+        </div>
+        <div class="login-page-pic">
+            <img src="../src/img/notVector/login-page-pic.png" alt="login page pic">
+        </div>
+       
+    </div>    
+
+
+    <script src= "./dist/index.js" type="module"></script>
+</body>
+</html>

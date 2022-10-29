@@ -31,7 +31,7 @@
         position: relative;
         
         @include tablets {
-            width: 80%;
+            // width: 80%;
         }
         @include phones {
             width: 100%;
@@ -41,7 +41,7 @@
         position: relative;
         z-index: 50;
         @include tablets {
-            width: 100%;
+            // width: 100%;
         }
         @include phones {
             width: 96%;
@@ -55,6 +55,9 @@
         // @include tablets {
         //     width: 106%;
         // }
+        @include tablets {
+            min-width: inherit;
+        }
         @include phones {
             min-width: 103%;
         }

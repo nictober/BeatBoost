@@ -28,4 +28,19 @@
         background: transparent;
         border: solid 1px #0F0F0F;        
     }
+    &_listen {
+        
+        &::before {
+            content: url("../src/img/svg/play-symbol.svg");
+            margin-right: 4px;
+        }
+    }
+    &_subscribe {
+        border-color: #1E1E1E;;
+        &::before {
+            content: url("../src/img/svg/plus-icon.svg");
+            margin-right: 4px;
+        }
+    }
+
 }

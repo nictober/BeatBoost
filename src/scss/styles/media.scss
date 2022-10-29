@@ -19,12 +19,27 @@
 }
 %only-desktop-visible {
     @include laptops {
-        display: none;
+        display: none !important;
     }
 }
 %only-non-desktop-visible {
     @media screen and (min-width: $Laptops) {
         display: none;
+    }
+}
+%only-phones-visible {
+    @media screen and (min-width: $Phones) {
+        display: none;
+    }
+}
+%only-phones-db {
+    @media screen and (max-width: $Phones) {
+        display: block !important;
+    }
+}
+%only-phones-non-visible {
+    @media screen and (max-width: $Phones) {
+        display: none !important;
     }
 }
 %media-tablets-none {

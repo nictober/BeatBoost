@@ -34,11 +34,38 @@
 }
 
 .search-form-mobile {
-    @extend .search-form;
     display: none;
     width: 192px;
-
     @include phones {
         display: block;
+    }
+    &__hint-block {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__input {
+        background: #1D1D1D;
+        border: none;
+        border-radius: 4px;
+        height: 35px;
+        width: 315px;
+        color: #FFF;
+        
+        &::placeholder {
+            background: url(../src/img/svg/search-icon.svg) no-repeat;
+            background-position: 12px;
+            padding-left: 32px;
+        }
+    }
+    &__categories {
+        display: flex;
+        position: absolute;
+        left: 250px;
+        margin-right: 5px;
+
+        @include phones {
+            left: 140px;
+        }
     }
 }
