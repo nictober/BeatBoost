@@ -430,6 +430,11 @@
             font-size: 10px;
         }
     }
+    &__side-card-status {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
     &__buy-status {
         display: flex;
         align-items: center;
@@ -524,6 +529,11 @@
     background: #0F0F0F;
     border-radius: 8px;
     margin: 0 auto;
+    @include phones {
+        padding: 40px 10px;
+        margin: 0;
+        background: none;
+    }
 
     &-wrapper {
         flex-direction: row;
@@ -531,6 +541,9 @@
         justify-content: flex-end;
         padding: 24px;
         align-items: center;
+        @include phones {
+            padding: 0;
+        }
     }
     &__logo {
         width: 186px;
@@ -556,6 +569,9 @@
         height: 35px;
         width: 340px;
         color: #FFF;
+        @include phones {
+            width: 276px;
+        }
 
         &::placeholder {
             color: white;
@@ -607,4 +623,391 @@
 }
 .login-page-pic {
     flex-grow: 0;
+    @extend %media-phones-none;
+}
+.pop-requests {
+    padding: 24px 48px;
+    border-bottom: 1px solid #1E1E1E;
+    @extend %media-phones-none;
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+.explore {
+    display: flex;
+    padding-top: 48px;
+
+    @include phones {
+        padding-top: 24px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &__categories-sideblock {
+        flex-basis: 20%;
+        @extend %media-phones-none;
+
+        .explore__title {
+            margin-bottom: 24px;    
+        }
+    }
+    &__categories-list {
+        color: #B8B8B8;
+        row-gap: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__category {
+        padding: 0 0 0 24px;
+
+        &_active {
+            color: white;
+        }
+        &:first-child {
+            padding: 0;
+            margin-bottom: 8px;
+        }
+    }
+    &__main-block {
+        flex-basis: 80%;
+        // display: grid;
+        // grid-template-areas: 
+        // "a a a"
+        // "b b b"
+        // "c c d"
+        // "e e e";
+        .search-form {
+            @include phones {
+                display: block;
+                margin: 0;
+            }
+        }
+    }
+    &__search-form {
+        width: 100%;
+        height: 56px;
+        margin: 0 0 36px 0;
+        @include phones {
+            width: 93%;
+        }
+
+        &::placeholder {
+            padding: 1px 0px 1px 44px;
+            background-size: 24px;
+            background-position: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            margin-right: 4px;
+        }
+    }
+    .search-form__categories {
+        display: none;
+    }
+    &__filter-block {
+        display: grid;
+        justify-items: flex-start;
+        align-items: center;
+        grid-template-columns: minmax(120px,15%) 65% 15%;
+        grid-template-rows: 1fr 40% 50%;
+        margin-bottom: 36px;
+
+        @include phones {
+            grid-template-columns: 124px 160px;
+            grid-template-rows: auto auto auto auto;
+        }
+    }
+    &__main-filter {
+        grid-area: 1 / 1 / 2 / 4;
+        margin-bottom: 12px;
+
+        @include phones {
+            grid-area: 1 / 1 / 1 / 4;
+        }
+    }
+    &__chosen-filters-block {
+        grid-area: 3 / 1 / 4 / 3;
+        display: flex;
+        gap: 20px;
+        white-space: nowrap;
+
+        @include phones {
+            grid-area: 4 / 1 / 5 / 3;
+            flex-wrap: wrap;
+        }
+    }
+    &__chosen-filter {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        border: 1px solid #0F0F0F;
+        border-radius: 4px;
+        background: #0F0F0F;
+        &:last-child {
+            background-color: transparent;
+        }
+    }
+    &__filter-dropdowns-list {
+        display: flex;
+        gap: 24px;
+        @include phones {
+            grid-area: 3 / 1 / 4 / 2;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding-top: 16px;
+        }
+    }
+    &__display-option-wrapper {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #0F0F0F;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_active {
+            background: #0F0F0F;
+        }
+    }
+    &__display-option-buttons {
+        display: flex;
+        justify-self: flex-end;
+        align-items: center;
+        gap: 4px;
+        @include phones {
+            grid-area: 2 / 2 / 3 / 3;
+            justify-self: flex-start;
+            padding-left: 4px;
+        }
+    }
+    &__subtitle-block {
+        display: flex;
+        align-items: center;
+        padding: 11px 16px;
+        border: 1px solid #0F0F0F;
+        border-radius: 4px;
+        gap: 6px;
+        
+        @include phones {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+    }
+    &__filter-category {
+        display: flex;
+        gap: 7px;
+    }
+    &__filter-name {
+        color: #B8B8B8;
+        font-weight: 500;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+    &__option-button {
+        border-radius: 4px;
+        &_active {
+            background: #0F0F0F;
+        }
+    }
+    &__playlist {
+        border-top: #bd1717 1px solid;
+        padding-top: 12px;
+    }
+}
+
+.wrapper {
+
+    &_collections {
+        padding: 0 11%;
+        @include phones {
+            padding: 0 6%;
+        }
+    }
+}
+
+.collections {
+    display: flex;
+    flex-direction: row;
+    padding-top: 66px;
+    gap: 32px;
+    margin-bottom: 40px;
+    @include phones {
+        flex-direction: column;
+    }
+    &__tracklist-wrap {
+        margin-bottom: 35px;
+    }
+    &__tracklist-header {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 11px;
+    }
+    &__tracklist-tab {
+        font-weight: 500;
+        font-size: 14px;
+        color: #1E1E1E;
+        &_active {
+            color: white;
+        }
+    }
+}
+
+.item-info {
+    display: grid;
+    grid-template-columns: minmax(450px, 1fr) minmax(100px, 0.3fr);
+    grid-template-rows: repeat(5, auto);
+    align-items: flex-start;
+    justify-items: flex-start;
+    flex-grow: 1;
+    white-space: nowrap;
+    @include phones {
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+
+    .button {
+        font-size: 12px;
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 64px;
+        @include phones {
+            font-weight: 700;
+            font-size: 32px;
+        }
+    }
+    &__top {
+        font-weight: 500;
+        font-size: 12px;
+        color: #B8B8B8;
+        @include phones {
+            margin-bottom: 8px;
+        }
+        img {
+            height: 9px;
+        }
+    }
+    &__main-info {
+        grid-area: 3 / 1 / 4 / 2;
+        @include phones {
+            grid-area: 2 / 1 / 3 / 1;
+            text-align-last: center;
+            margin-bottom: 12px;
+        }
+    }
+    &__item-author {
+        font-weight: 400;
+        font-size: 16px;
+        color: #B8B8B8;
+        a {
+            color: #FFF;
+            text-decoration: underline;
+        }
+    }
+    &__item-genre {
+        font-weight: 400;
+        font-size: 12px;
+        color: #B8B8B8;
+        @extend %media-phones-none;
+    }
+    &__buy-block {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    &__buy-button {
+        display: flex;
+        align-items: center !important;
+        // padding: 5px 21px !important;
+    }
+    &__hashtags {
+        @extend .genres__hashtags;
+        @include phones {
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+    }
+    &__button {
+        padding: 12px 20px;
+        margin-bottom: 24px;
+    }
+    &__mobile-price {
+        display: none;
+        margin: 0;
+        @include phones {
+            display: flex;
+        }
+    }
+}
+
+.buy-block {
+    display: flex;
+    gap: 6px;
+
+    .button {
+        padding: 8px;
+    }
+
+    &__inner-wrap {
+        display: flex;
+        border: 1px solid #1E1E1E;
+        border-radius: 4px;
+        padding: 6px 8px;
+        gap: 16px;
+        // @extend .track__price;
+        >.button {
+            @include phones {
+                display: none;
+            }
+        }
+        @include phones {
+            border: none;
+            gap: 0;
+            padding: 0;
+        }
+    }
+    &__option {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 12px;
+        gap: 8px;
+        @include phones {
+            display: none;
+        }
+
+        input {
+            @include phones {
+                display: none;
+            }
+        }
+
+        &:nth-child(2) {
+            @include phones {
+                display: none;
+            }
+
+        }
+    }
+    &__price {
+
+        &_active{
+            padding: 4px 6px;
+            background: #1E1E1E;
+            border-radius: 4px;
+        }
+    }
+    &__cart-icon {
+        @extend .explore__display-option-wrapper;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #1E1E1E;
+        @include phones {
+            display: none;
+        }
+    }
 }
