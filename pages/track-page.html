@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
+    <link rel="stylesheet" href="../dist/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__side-wrapper">
+            <a href="#" class="header__logo">
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="header__logo-orig">
+            </a>
+            <a href="#" class="header__logo-mobile">
+                <img src="../src/img/svg/logo-mini.svg" alt="beatBoost logo" class="header__logo-orig">
+            </a>
+            <div class="header__burger-menu burger-menu">
+                <div class="burger-menu__element1"></div>
+                <div class="burger-menu__element2"></div>
+                <div class="burger-menu__element3"></div>
+            </div>
+            <form class="search-form">
+                <div class="search-form__hint-block">
+                    <!-- <img src="../src/img/svg/search-icon.svg" alt="magnifier image"> -->
+                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
+                    <div class="search-form__categories">
+                        <div class="search-form__category">Биты</div>
+                        <img src="../src/img/svg/arrow-down.svg" alt="arrow down icon">
+                    </div>
+                </div>
+            </form>
+            <nav class="header__site-menu">
+                <ul class="site-menu">
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Поиск</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Лента</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Треки</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Релизы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__side-wrapper">
+            <div class="login-block">
+                <div class="login-block__register">Создать аккаунт</div>
+                <div class="login-block__sign-in">Войти</div>
+            </div>
+            <div class="header__begin-button button">Начать продавать</div>
+            <form class="search-form-mobile">
+                <div class="search-form__hint-block">
+                    <!-- <img src="../src/img/svg/search-icon.svg" alt="magnifier image"> -->
+                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
+                    <div class="search-form__categories">
+                        <div class="search-form__category">Биты</div>
+                        <img src="../src/img/svg/arrow-down.svg" alt="arrow down icon">
+                    </div>
+                </div>
+            </form>
+            <div class="header__cart-vidget cart-vidget">
+                <img src="../src/img/svg/cart-shopping.svg" alt="cart icon">
+                <div class="cart-vidget__counter">1</div>
+                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <section class="track-page">
+            <div class="track-page__track-info">
+                <div class="track-page__track">
+                    <img src="../src/img/notVector/track-page-img.png" alt="track cover" class="track-page__track-img">
+                    <div class="track-page__track">
+                        <div class="history__buy-title">Arhvic Demolsih</div>
+                        <div class="track__creator-wrapper">
+                            <h5 class="track__creator">Russian Label</h5>
+                            <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-page__tags">
+                    <div class="track-page__hashtags-name">Теги</div>
+                    <ul class="genres__hashtags">
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#160bpm</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#160bpm</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                    </ul>
+                </div>
+                <div class="track-page__tags">
+                    <div class="track-page__hashtags-name">Жанры</div>
+                    <ul class="genres__hashtags">
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#160bpm</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#160bpm</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                        <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="track-page__licenses">
+                <div class="track-page__title">Лицензии</div>
+                <ul class="track-page__license-types">
+                    <li class="track-page__license license license_active">
+                        <div class="license__name">Premium License</div>
+                        <div class="license__price">20000₽</div>
+                        <ul class="license__mobile-add-info">
+                            <li class="license__mobile-add-unit">Данное предложение включает в себя</li>
+                            <li class="license__mobile-add-unit">Возможность аренды бита без</li>
+                            <li class="license__mobile-add-unit">Предоставления полной безлимитной</li>
+                        </ul>
+                        <div class="license__format">MP3 AND WAV</div>
+                    </li>
+                    <li class="track-page__license license">
+                        <div class="license__name">Premium License</div>
+                        <div class="license__price">20000₽</div>
+                        <ul class="license__mobile-add-info">
+                            <li class="license__mobile-add-unit">Данное предложение включает в себя</li>
+                            <li class="license__mobile-add-unit">Возможность аренды бита без</li>
+                            <li class="license__mobile-add-unit">Предоставления полной безлимитной</li>
+                        </ul>
+                        <div class="license__format">MP3 AND WAV</div>
+                    </li>
+                    <li class="track-page__license license">
+                        <div class="license__name">Premium License</div>
+                        <div class="license__price">20000₽</div>
+                        <ul class="license__mobile-add-info">
+                            <li class="license__mobile-add-unit">Данное предложение включает в себя</li>
+                            <li class="license__mobile-add-unit">Возможность аренды бита без</li>
+                            <li class="license__mobile-add-unit">Предоставления полной безлимитной</li>
+                        </ul>
+                        <div class="license__format">MP3 AND WAV</div>
+                    </li>
+                    <li class="track-page__license license">
+                        <div class="license__name">Premium License</div>
+                        <div class="license__price">20000₽</div>
+                        <ul class="license__mobile-add-info">
+                            <li class="license__mobile-add-unit">Данное предложение включает в себя</li>
+                            <li class="license__mobile-add-unit">Возможность аренды бита без</li>
+                            <li class="license__mobile-add-unit">Предоставления полной безлимитной</li>
+                        </ul>
+                        <div class="license__format">MP3 AND WAV</div>
+                    </li>
+                </ul>ç
+            </div>
+        </section>
+    </div>
+    <div class="player">
+        <div class="player__left-block">
+            <div class="player__track-cover ">
+                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
+            </div>
+            <div class="player__track-info">
+                <div class="track__name-wrapper">
+                    <h5 class="track__title">Arhvic Demolsih</h5>
+                </div>
+                <div class="track__creator-wrapper">
+                    <h5 class="track__creator">Russian Label</h5>
+                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                </div>
+            </div>
+            <div class="player__price-block">
+                <div class="track__price-dropdown">
+                    <div class="track__price-count">2990₽</div>
+                    <div class="track__price-dropdown-text">Track out</div>
+                    <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                </div>
+                <div class="track__price-dropdown">
+                    <div class="track__price-dropdown-text">В корзину</div>
+                    <img src="../src/img/svg/cart-shopping.svg" alt="cart icon" class="track__price-dropdown-icon">
+                </div>
+            </div>
+        </div>
+        <div class="player__controls">
+            <img src="../src/img/svg/player-previous-icon.svg" alt="player contol icon" class="player__back">
+            <img src="../src/img/svg/play-Icon-big.svg" alt="player contol icon" class="player__play-stop">
+            <img src="../src/img/svg/player-next-icon.svg" alt="player contol icon" class="player__next">
+        </div>
+        <div class="player__volume-controls">
+            <img src="../src/img/svg/player-volume.svg" alt="player contol icon" class="player__volume-icon">
+            <div class="player__volume-level"></div>
+            <img src="../src/img/svg/player-volume-plus.svg" alt="player contol icon" class="player__volume-plus">
+            <img src="../src/img/svg/player-volume-minus.svg" alt="player contol icon" class="player__volume-minus">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__main-block">
+            <div class="footer__login-block ">
+                <div class="footer__top-wrapper">
+                    <h4 class="footer__title">Начни сейчас ϟ</h4>
+                    <div class="footer__button-wrapper">
+                        <a href="#" class="footer__login button button_red">Войти</a>
+                        <a href="#" class="footer__login button button_gray">Cоздать аккаунт</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="footer__link-blocks">
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">BeatBoost</h5>
+                    <a href="#">Главная</a>
+                    <a href="#">Лента</a>
+                    <a href="#">Поиск</a>
+                    <a href="#">Треки</a>
+                    <a href="#">Коллекции</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Социальные сети</h5>
+                    <a href="#">Instagram</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Vkontakte</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Помощь</h5>
+                    <a href="#">BeatBoost Buff</a>
+                    <a href="#">Регистрация</a>
+                    <a href="#">Цены</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Войти</a>
+                </li>
+            </ul>
+            <div class="footer__side-block">
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="BeatBoost logo" class="footer__logo">
+            </div>
+        </div>
+        <div class="footer__copyright-block">
+            <span class="footer__rights">© 2022 BeatBoost. Все права защищены</span>
+            <span class="footer__privacy">Privacy Policy</span>
+        </div>
+    </footer>
+    <script src= "./dist/index.js" type="module"></script>
+</body>
+</html>
