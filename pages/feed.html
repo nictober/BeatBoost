@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
+    <link rel="stylesheet" href="../dist/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__side-wrapper">
+            <a href="#" class="header__logo">
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="header__logo-orig">
+            </a>
+            <a href="#" class="header__logo-mobile">
+                <img src="../src/img/svg/logo-mini.svg" alt="beatBoost logo" class="header__logo-orig">
+            </a>
+            <div class="header__burger-menu burger-menu">
+                <div class="burger-menu__element1"></div>
+                <div class="burger-menu__element2"></div>
+                <div class="burger-menu__element3"></div>
+            </div>
+            <form class="search-form">
+                <div class="search-form__hint-block">
+                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
+                    <div class="search-form__categories">
+                        <div class="search-form__category">Биты</div>
+                        <img src="../src/img/svg/arrow-down.svg" alt="arrow down icon">
+                    </div>
+                </div>
+            </form>
+            <nav class="header__site-menu">
+                <ul class="site-menu">
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Поиск</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Лента</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Треки</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Релизы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__side-wrapper">
+            <div class="login-block">
+                <div class="login-block__register">Создать аккаунт</div>
+                <div class="login-block__sign-in">Войти</div>
+            </div>
+            <div class="header__begin-button button">Начать продавать</div>
+            <form class="search-form-mobile">
+                <div class="search-form__hint-block">
+                    <!-- <img src="../src/img/svg/search-icon.svg" alt="magnifier image"> -->
+                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
+                    <div class="search-form__categories">
+                        <div class="search-form__category">Биты</div>
+                        <img src="../src/img/svg/arrow-down.svg" alt="arrow down icon">
+                    </div>
+                </div>
+            </form>
+            <div class="header__cart-vidget cart-vidget">
+                <img src="../src/img/svg/cart-shopping.svg" alt="cart icon">
+                <div class="cart-vidget__counter">1</div>
+                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <form class="search-form">
+            <div class="search-form__hint-block">
+                <input placeholder="Что вы ищете?" class="search-form__input explore__search-form" type="text">
+            </div>
+        </form>
+        <section class="feed">
+            <div class="explore__categories-sideblock feed__sideblock">
+                <div class="explore__title">Категории</div>
+                <ul class="explore__categories-list feed__categories-list">
+                    <li class="explore__category">Все категории</li>
+                    <li class="explore__category explore__category_active">Биты</li>
+                    <li class="explore__category">Релизы</li>
+                    <li class="explore__category">Звуки</li>
+                    <li class="explore__category">Сэмплы</li>
+                    <li class="explore__category">Люди</li>
+                </ul>
+                <div class="explore__title">Популярные запросы</div>
+                <ul class="genres__hashtags">
+                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#160bpm</li>
+                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
+                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#160bpm</li>
+                </ul>
+            </div>
+            <div class="explore__main-block feed__mainblock">
+                <div class="chat__dialog-item dialog">
+                    <img src="../src/img/notVector/author1.png" alt="chat profile image" class="dialog__userpic feed__poster-image">
+                    <div class="dialog__top-block">
+                        <div class="dialog__name">
+                            <span class="dialog__username">Jarret Waelchi</span>
+                            <span class="feed__time-after">• 12 h.</span>
+                        </div>
+                    </div>
+                    <div class="dialog__last-message-text">@Animestar</div>
+                </div>
+                <div class="history__chosen-buy-card">
+                    <div class="history__track-cover">
+                        <img src="../src/img/notVector/album-cover-hires.png" class="history__buy-img"></img> 
+                    </div>
+                    <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-top">
+                        <div class="history__buy-title">Arhvic Demolsih</div>
+                        <div class="track__creator-wrapper">
+                            <h5 class="track__creator">Russian Label</h5>
+                            <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                        </div>
+                    </div>
+                    <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-bot">
+                        <span class="history__chosen-buy-price">24000₽</span>
+                        <span class="history__chosen-buy-album-status">Album Out</span>
+                    </div>
+                    <span class="history__track-count">32 трека</span>
+                </div>
+                <ul class="genres__hashtags feed__hashtags">
+                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#SovietWave</li>
+                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#VaporWave</li>
+                </ul>
+                <div class="feed__bot-block">
+                    <ul class="feed__buttons">
+                        <li class="feed__button">
+                            <img src="../src/img/svg/feed-heart-icon.svg" alt="heart icon" class="feed__button-img">
+                            <span class="feed__button-text">5K</span>
+                        </li>
+                        <li class="feed__button">
+                            <img src="../src/img/svg/feed-Share.svg" alt="share icon" class="feed__button-img">
+                            <span class="feed__button-text">12</span>
+                        </li>
+                        <li class="feed__button">
+                            <img src="../src/img/svg/feed-Share.svg" alt="heat icon" class="feed__button-img">
+                            <span class="feed__button-text">24</span>
+                        </li>
+                    </ul>
+                    <div class="feed__views">
+                        <img src="../src/img/svg/eye-icon.svg" alt="heat icon" class="feed__button">  
+                        <span class="feed__view-count">23K</span>
+                    </div>
+                </div>
+                <div class="feed__comments comments">
+                    <div class="comments__header">
+                        <span class="comments__comment-count">24 комментария</span>
+                        <div class="comments__sort">
+                            <span class="comments__sort-title">Сначала интересные</span>
+                            <img src="../src/img/svg/thin-angle-down.svg" alt="angle down" class="comments__dropdown-img">
+                        </div>
+                    </div>
+                    <div class="comments__comment">
+                        <img src="../src/img/notVector/author1.png" alt="chat profile image" class="dialog__userpic feed__poster-image">
+                        <div class="comments__comment-top-text">
+                            <div class="dialog__top-block">
+                                <div class="dialog__name">
+                                    <span class="dialog__username">Jarret Waelchi</span>
+                                    <span class="feed__time-after">• 12 h.</span>
+                                </div>
+                            </div>
+                            <div class="dialog__last-message-text">@Animestar</div>
+                        </div>
+                        <div class="comments__comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam temporibus aliquam aliquid dignissimos. Fuga quis minima nihil non dolorum? Vitae eveniet voluptas nostrum neque minus sed consequuntur reiciendis ab dolorum sint tempora, est iure nam obcaecati repellendus praesentium provident, harum autem. Voluptates harum impedit explicabo ipsum vero dolor nam!</div>
+                        <div class="comments__comment-likes-button">
+                            <img src="../src/img/svg/feed-heart-icon.svg" alt="heart icon" class="comments__comment-likes-img">
+                            <span class="comments__comment-likes-count">4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer__main-block">
+            <div class="footer__login-block ">
+                <div class="footer__top-wrapper">
+                    <h4 class="footer__title">Начни сейчас ϟ</h4>
+                    <div class="footer__button-wrapper">
+                        <a href="#" class="footer__login button button_red">Войти</a>
+                        <a href="#" class="footer__login button button_gray">Cоздать аккаунт</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="footer__link-blocks">
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">BeatBoost</h5>
+                    <a href="#">Главная</a>
+                    <a href="#">Лента</a>
+                    <a href="#">Поиск</a>
+                    <a href="#">Треки</a>
+                    <a href="#">Коллекции</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Социальные сети</h5>
+                    <a href="#">Instagram</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Vkontakte</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Помощь</h5>
+                    <a href="#">BeatBoost Buff</a>
+                    <a href="#">Регистрация</a>
+                    <a href="#">Цены</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Войти</a>
+                </li>
+            </ul>
+            <div class="footer__side-block">
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="BeatBoost logo" class="footer__logo">
+            </div>
+        </div>
+        <div class="footer__copyright-block">
+            <span class="footer__rights">© 2022 BeatBoost. Все права защищены</span>
+            <span class="footer__privacy">Privacy Policy</span>
+        </div>
+    </footer>
+    
+    <script src= "./dist/index.js" type="module"></script>
+</body>
+</html>

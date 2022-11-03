@@ -1,0 +1,46 @@
+.license {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    border: 1px solid #1E1E1E;
+    border-radius: 6px;
+    gap: 10px;
+    flex-basis: 350px;
+    align-items: flex-start;
+    flex-grow: 1;
+
+    @include phones {
+        &_active {
+            background: #0A0A0A;
+            border-color: #bd1717;
+        }
+    }
+
+    &__price {
+        background: #0A0A0A;
+        border-radius: 4.62245px;
+        padding: 5px 7px;
+    }
+    &__format {
+        color: #B8B8B8;
+    }
+    &__mobile-add-info {
+        // list-style:disc !important;
+        // list-style-position: outside !important;
+
+        li {
+            margin-bottom: 4px;
+        }
+    }
+    &__mobile-add-unit {
+        display: none;
+        @include phones {
+            display: flex;
+            flex-basis: 184px;
+            font-weight: 500;
+            font-size: 12px;
+            color: #B8B8B8;
+
+        }
+    }
+}

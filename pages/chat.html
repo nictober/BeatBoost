@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
+    <link rel="stylesheet" href="../dist/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__side-wrapper">
+            <a href="#" class="header__logo">
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="header__logo-orig">
+            </a>
+            <a href="#" class="header__logo-mobile">
+                <img src="../src/img/svg/logo-mini.svg" alt="beatBoost logo" class="header__logo-orig">
+            </a>
+            <div class="header__burger-menu burger-menu">
+                <div class="burger-menu__element1"></div>
+                <div class="burger-menu__element2"></div>
+                <div class="burger-menu__element3"></div>
+            </div>
+            <form class="search-form">
+                <div class="search-form__hint-block">
+                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
+                    <div class="search-form__categories">
+                        <div class="search-form__category">Биты</div>
+                        <img src="../src/img/svg/arrow-down.svg" alt="arrow down icon">
+                    </div>
+                </div>
+            </form>
+            <nav class="header__site-menu">
+                <ul class="site-menu">
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Поиск</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Лента</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Треки</a>
+                    </li>
+                    <li class="site-menu__item">
+                        <a href="#" class="site-menu__link">Релизы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__side-wrapper">
+            <div class="login-block">
+                <div class="login-block__register">Создать аккаунт</div>
+                <div class="login-block__sign-in">Войти</div>
+            </div>
+            <div class="header__begin-button button">Начать продавать</div>
+            <form class="search-form-mobile">
+                <div class="search-form__hint-block">
+                    <!-- <img src="../src/img/svg/search-icon.svg" alt="magnifier image"> -->
+                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
+                    <div class="search-form__categories">
+                        <div class="search-form__category">Биты</div>
+                        <img src="../src/img/svg/arrow-down.svg" alt="arrow down icon">
+                    </div>
+                </div>
+            </form>
+            <div class="header__cart-vidget cart-vidget">
+                <img src="../src/img/svg/cart-shopping.svg" alt="cart icon">
+                <div class="cart-vidget__counter">1</div>
+                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
+            </div>
+        </div>
+    </header>
+    <div class="wrapper wrapper_chat">
+        <div class="chat">
+            <div class="chat__search">
+                <input placeholder="Поиск" class="search-form__input explore__search-form chat__search-form" type="text">
+            </div>    
+            <div class="chat__profile">
+                <div class="chat__profile-name-block">
+                    <img src="../src/img/notVector/chat-profile-pic.png" alt="profile avatar" class="profile__img">
+                    <div class="chat__profile-name">Alex Defone</div>
+                </div>
+                <div class="chat__profile-settings">
+                    <div class="chat__decorative-dot"></div>
+                    <div class="chat__decorative-dot"></div>
+                </div>
+            </div>
+            <ul class="chat__dialog-list">
+                <li class="chat__dialog-item dialog dialog_active">
+                    <img src="../src/img/notVector/userpic1.png" alt="chat profile image" class="dialog__userpic">
+                    <div class="dialog__top-block">
+                        <div class="dialog__name">
+                            <span class="dialog__username">Jarret Waelchi</span>
+                            <div class="dialog__online-status"></div>
+                        </div>
+                        <div class="dialog__last-message-time">03:30PM</div>
+                    </div>
+                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                </li>
+                <div class="chat__dialog-decorative-border"></div>
+                <li class="chat__dialog-item dialog">
+                    <img src="../src/img/notVector/userpic2.png" alt="chat profile image" class="dialog__userpic">
+                    <div class="dialog__top-block">
+                        <div class="dialog__name">
+                            <span class="dialog__username">Jarret Waelchi</span>
+                            <div class="dialog__online-status"></div>
+                        </div>
+                        <div class="dialog__last-message-time">03:30PM</div>
+                    </div>
+                    <div class="dialog__last-message-text">When do you release the coded....</div>
+                </li>
+                <div class="chat__dialog-decorative-border"></div>
+                <li class="chat__dialog-item dialog">
+                    <img src="../src/img/notVector/userpic3.png" alt="chat profile image" class="dialog__userpic">
+                    <div class="dialog__top-block">
+                        <div class="dialog__name">
+                            <span class="dialog__username">Jarret Waelchi</span>
+                            <div class="dialog__online-status"></div>
+                        </div>
+                        <div class="dialog__last-message-time">03:30PM</div>
+                    </div>
+                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                </li>
+                <div class="chat__dialog-decorative-border"></div>
+                <li class="chat__dialog-item dialog">
+                    <img src="../src/img/notVector/userpic1.png" alt="chat profile image" class="dialog__userpic">
+                    <div class="dialog__top-block">
+                        <div class="dialog__name">
+                            <span class="dialog__username">Jarret Waelchi</span>
+                            <div class="dialog__online-status"></div>
+                        </div>
+                        <div class="dialog__last-message-time">03:30PM</div>
+                    </div>
+                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                </li>
+                <div class="chat__dialog-decorative-border"></div>
+                <li class="chat__dialog-item dialog">
+                    <img src="../src/img/notVector/userpic2.png" alt="chat profile image" class="dialog__userpic">
+                    <div class="dialog__top-block">
+                        <div class="dialog__name">
+                            <span class="dialog__username">Jarret Waelchi</span>
+                            <div class="dialog__online-status"></div>
+                        </div>
+                        <div class="dialog__last-message-time">03:30PM</div>
+                    </div>
+                    <div class="dialog__last-message-text">When do you release the coded....</div>
+                </li>
+                <div class="chat__dialog-decorative-border"></div>
+                <li class="chat__dialog-item dialog">
+                    <img src="../src/img/notVector/userpic3.png" alt="chat profile image" class="dialog__userpic">
+                    <div class="dialog__top-block">
+                        <div class="dialog__name">
+                            <span class="dialog__username">Jarret Waelchi</span>
+                            <div class="dialog__online-status"></div>
+                        </div>
+                        <div class="dialog__last-message-time">03:30PM</div>
+                    </div>
+                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                </li>
+                <div class="chat__dialog-decorative-border"></div>
+                <li class="chat__dialog-item dialog">
+                    <img src="../src/img/notVector/userpic3.png" alt="chat profile image" class="dialog__userpic">
+                    <div class="dialog__top-block">
+                        <div class="dialog__name">
+                            <span class="dialog__username">Jarret Waelchi</span>
+                            <div class="dialog__online-status"></div>
+                        </div>
+                        <div class="dialog__last-message-time">03:30PM</div>
+                    </div>
+                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                </li>
+            </ul>
+            <div class="chat__chatting-window">
+                <ul class="chat__messages">
+                    <li class="chat__message">
+                        <img src="../src/img/notVector/userpic2.png" alt="chat profile image" class="chat__message-userpic">
+                        <div class="chat__message-header">
+                            <span class="chat__message-username">Orval Casper</span>
+                            <div class="chat__message-time">11:59AM</div>
+                        </div>
+                        <div class="chat__message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив</div>
+                    </li>
+                    <li class="chat__message">
+                        <img src="../src/img/notVector/userpic-chat.png" alt="chat profile image" class="chat__message-userpic">
+                        <div class="chat__message-header">
+                            <span class="chat__message-username">Orval Casper</span>
+                            <div class="chat__message-time">11:59AM</div>
+                        </div>
+                        <div class="chat__message-text">Привет! Окей, гуд. Давай начнем работу с 20к за бит. Для постоянных клиентов у меня скидки</div>
+                    </li>
+                </ul>
+                <div class="chat__typing-block typing-block">
+                    <img src="../src/img/notVector/userpic-chat2.png" alt="userpic" class="typing-block__avatar">
+                    <input placeholder="Write something..." class="search-form__input explore__search-form" type="text">
+                    <div class="typing-block__buttons">
+                        <img src="../src/img/svg/chat-Send-icon.svg" alt="chat-button-icon" class="typing-block__button">
+                        <img src="../src/img/svg/chat-add-doc-icon.svg" alt="chat-button-icon" class="typing-block__button">
+                        <img src="../src/img/svg/chat-emoji-icon.svg" alt="chat-button-icon" class="typing-block__button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer class="footer">
+        <div class="footer__main-block">
+            <div class="footer__login-block ">
+                <div class="footer__top-wrapper">
+                    <h4 class="footer__title">Начни сейчас ϟ</h4>
+                    <div class="footer__button-wrapper">
+                        <a href="#" class="footer__login button button_red">Войти</a>
+                        <a href="#" class="footer__login button button_gray">Cоздать аккаунт</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="footer__link-blocks">
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">BeatBoost</h5>
+                    <a href="#">Главная</a>
+                    <a href="#">Лента</a>
+                    <a href="#">Поиск</a>
+                    <a href="#">Треки</a>
+                    <a href="#">Коллекции</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Социальные сети</h5>
+                    <a href="#">Instagram</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Vkontakte</a>
+                </li>
+                <li class="footer__link-block">
+                    <h5 class="footer__link-title">Помощь</h5>
+                    <a href="#">BeatBoost Buff</a>
+                    <a href="#">Регистрация</a>
+                    <a href="#">Цены</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Войти</a>
+                </li>
+            </ul>
+            <div class="footer__side-block">
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="BeatBoost logo" class="footer__logo">
+            </div>
+        </div>
+        <div class="footer__copyright-block">
+            <span class="footer__rights">© 2022 BeatBoost. Все права защищены</span>
+            <span class="footer__privacy">Privacy Policy</span>
+        </div>
+    </footer> -->
+    
+    <script src= "./dist/index.js" type="module"></script>
+</body>
+</html>

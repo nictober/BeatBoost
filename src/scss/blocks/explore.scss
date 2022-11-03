@@ -1,0 +1,183 @@
+.explore {
+    display: flex;
+    padding-top: 48px;
+
+    @include phones {
+        padding-top: 24px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &__categories-sideblock {
+        flex-basis: 20%;
+        @extend %media-phones-none;
+
+        .explore__title {
+            margin-bottom: 24px;    
+        }
+    }
+    &__categories-list {
+        color: #B8B8B8;
+        row-gap: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__category {
+        padding: 0 0 0 24px;
+
+        &_active {
+            color: white;
+        }
+        &:first-child {
+            padding: 0;
+            margin-bottom: 8px;
+        }
+    }
+    &__main-block {
+        flex-basis: 80%;
+        // display: grid;
+        // grid-template-areas: 
+        // "a a a"
+        // "b b b"
+        // "c c d"
+        // "e e e";
+        .search-form {
+            @include phones {
+                display: block;
+                margin: 0;
+            }
+        }
+    }
+    &__search-form {
+        width: 100%;
+        height: 56px;
+        margin: 0 0 36px 0;
+        @include phones {
+            width: 93%;
+        }
+
+        &::placeholder {
+            padding: 1px 0px 1px 44px;
+            background-size: 24px;
+            background-position: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            margin-right: 4px;
+        }
+    }
+    .search-form__categories {
+        display: none;
+    }
+    &__filter-block {
+        display: grid;
+        justify-items: flex-start;
+        align-items: center;
+        grid-template-columns: minmax(120px,15%) 65% 15%;
+        grid-template-rows: 1fr 40% 50%;
+        margin-bottom: 36px;
+
+        @include phones {
+            grid-template-columns: 124px 160px;
+            grid-template-rows: auto auto auto auto;
+        }
+    }
+    &__main-filter {
+        grid-area: 1 / 1 / 2 / 4;
+        margin-bottom: 12px;
+
+        @include phones {
+            grid-area: 1 / 1 / 1 / 4;
+        }
+    }
+    &__chosen-filters-block {
+        grid-area: 3 / 1 / 4 / 3;
+        display: flex;
+        gap: 20px;
+        white-space: nowrap;
+
+        @include phones {
+            grid-area: 4 / 1 / 5 / 3;
+            flex-wrap: wrap;
+        }
+    }
+    &__chosen-filter {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        border: 1px solid #0F0F0F;
+        border-radius: 4px;
+        background: #0F0F0F;
+        &:last-child {
+            background-color: transparent;
+        }
+    }
+    &__filter-dropdowns-list {
+        display: flex;
+        gap: 24px;
+        @include phones {
+            grid-area: 3 / 1 / 4 / 2;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding-top: 16px;
+        }
+    }
+    &__display-option-wrapper {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #0F0F0F;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_active {
+            background: #0F0F0F;
+        }
+    }
+    &__display-option-buttons {
+        display: flex;
+        justify-self: flex-end;
+        align-items: center;
+        gap: 4px;
+        @include phones {
+            grid-area: 2 / 2 / 3 / 3;
+            justify-self: flex-start;
+            padding-left: 4px;
+        }
+    }
+    &__subtitle-block {
+        display: flex;
+        align-items: center;
+        padding: 11px 16px;
+        border: 1px solid #0F0F0F;
+        border-radius: 4px;
+        gap: 6px;
+        
+        @include phones {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+    }
+    &__filter-category {
+        display: flex;
+        gap: 7px;
+    }
+    &__filter-name {
+        color: #B8B8B8;
+        font-weight: 500;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+    &__option-button {
+        border-radius: 4px;
+        &_active {
+            background: #0F0F0F;
+        }
+    }
+    &__playlist {
+        border-top: #bd1717 1px solid;
+        padding-top: 12px;
+    }
+}

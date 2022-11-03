@@ -1,0 +1,10 @@
+.pop-requests {
+    padding: 24px 48px;
+    border-bottom: 1px solid #1E1E1E;
+    @extend %media-phones-none;
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+}

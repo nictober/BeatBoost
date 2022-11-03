@@ -1,0 +1,44 @@
+.dialog {
+    font-size: 12px;
+    display: grid;
+    // grid-auto-columns: auto 1fr;
+    // grid-template-rows: auto auto;
+    grid: auto auto / auto 1fr;
+    overflow: hidden;
+    padding: 8px 12px;
+
+    &_active {
+        background: #161719;
+        border-radius: 8px;
+    }
+    &__userpic {
+        grid-area: 1/1/3/2;
+        margin-right: 8px;
+    }
+    &__top-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        grid-area: 1 / 2 / 2 / 3;
+        gap: 4px;
+    }
+    &__online-status {
+        width: 12px;
+        height: 12px;
+        background: #13D1CB;
+        border-radius: 12px;
+    }
+    &__last-message-time {
+        font-weight: 500;
+        color: #9A9FA5;
+    }
+    &__last-message-text {
+        grid-area: 2/2/3/3;
+        font-weight: 500;
+        color: #6F767E;
+    }
+}

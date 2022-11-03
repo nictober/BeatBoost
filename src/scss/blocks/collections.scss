@@ -1,0 +1,26 @@
+.collections {
+    display: flex;
+    flex-direction: row;
+    padding-top: 66px;
+    gap: 32px;
+    margin-bottom: 40px;
+    @include phones {
+        flex-direction: column;
+    }
+    &__tracklist-wrap {
+        margin-bottom: 35px;
+    }
+    &__tracklist-header {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 11px;
+    }
+    &__tracklist-tab {
+        font-weight: 500;
+        font-size: 14px;
+        color: #1E1E1E;
+        &_active {
+            color: white;
+        }
+    }
+}

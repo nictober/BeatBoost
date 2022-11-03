@@ -1,0 +1,73 @@
+.player {
+    display: flex;
+    justify-content: space-between;
+    height: 98px;
+    white-space: nowrap;
+    align-items: center;
+    padding: 0 48px;
+    background: #0F0F0F;
+    border-top: 2px solid #1E1E1E;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @include phones {
+        display: none;
+    }
+
+    &__left-block {
+        display: flex;
+        flex-basis: 458px;
+        align-items: center;
+    }
+    &__track-cover {
+        margin-right: 12px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    &__track-info {
+        margin-right: 16px;
+    }
+    &__price-block {
+        display: flex;
+        align-items: flex-start;
+        padding: 8px;
+        border: 1px solid #1E1E1E;
+        border-radius: 4px;
+        gap: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        .track__price-dropdown-icon {
+            width: 12px;
+            height: 12px;
+        }
+        .track__price-dropdown:last-child {
+            background: #bd1717;
+        }
+    }
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+    &__volume-controls {
+        display: flex;
+        align-items: center;
+    }
+    &__volume-level {
+        width: 80px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        border-radius: 3px;
+        margin-right: 48px;
+    }
+    &__volume-icon {
+        margin-right: 10px;
+    }
+    &__volume-plus {
+        margin-right: 20px;
+    }
+}

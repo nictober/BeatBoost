@@ -1,0 +1,67 @@
+.buy-block {
+    display: flex;
+    gap: 6px;
+
+    .button {
+        padding: 8px;
+    }
+
+    &__inner-wrap {
+        display: flex;
+        border: 1px solid #1E1E1E;
+        border-radius: 4px;
+        padding: 6px 8px;
+        gap: 16px;
+        // @extend .track__price;
+        >.button {
+            @include phones {
+                display: none;
+            }
+        }
+        @include phones {
+            border: none;
+            gap: 0;
+            padding: 0;
+        }
+    }
+    &__option {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 12px;
+        gap: 8px;
+        @include phones {
+            display: none;
+        }
+
+        input {
+            @include phones {
+                display: none;
+            }
+        }
+
+        &:nth-child(2) {
+            @include phones {
+                display: none;
+            }
+
+        }
+    }
+    &__price {
+
+        &_active{
+            padding: 4px 6px;
+            background: #1E1E1E;
+            border-radius: 4px;
+        }
+    }
+    &__cart-icon {
+        @extend .explore__display-option-wrapper;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #1E1E1E;
+        @include phones {
+            display: none;
+        }
+    }
+}

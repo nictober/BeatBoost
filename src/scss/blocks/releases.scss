@@ -21,7 +21,7 @@
                 max-width: inherit;
             }
         }
-        & .releases__feed {
+        & .releases__scrollblock {
             @include phones {
                 flex-direction: column;
             }
@@ -40,7 +40,7 @@
         }
     }
 
-    &__feed {
+    &__scrollblock {
         gap: 24px;
     }
     &__top-content-wrapper {

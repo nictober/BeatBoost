@@ -1,0 +1,23 @@
+.typing-block {
+    display: flex;
+    align-items: center;
+    background: #060606;
+    @include phones {
+        padding: 0;
+        gap: 8px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 24px;
+        flex-shrink: 0;
+        @include phones {
+            img {
+                display: none;
+            }
+            img:first-child {
+                display: block;
+            }
+        }
+    }
+}
