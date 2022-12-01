@@ -73,18 +73,25 @@
     </header>
     <div class="wrapper wrapper_chat">
         <div class="chat">
+            <div class="chat__info">
+                <div class="chat__title">Чаты</div>
+                <div class="chat__message-counters">
+                    <div class="chat__all-messages-sum">243 сообщения,</div>
+                    <div class="chat__new-messages-sum">&nbsp2 новых</div>
+                </div>
+            </div>
             <div class="chat__search">
                 <input placeholder="Поиск" class="search-form__input explore__search-form chat__search-form" type="text">
             </div>    
             <div class="chat__profile">
                 <div class="chat__profile-name-block">
-                    <img src="../src/img/notVector/chat-profile-pic.png" alt="profile avatar" class="profile__img">
-                    <div class="chat__profile-name">Alex Defone</div>
+                    <img src="../src/img/notVector/author1.png" alt="profile avatar" class="chat__profile-img">
+                    <div class="chat__profile-name">Александр Волков</div>
                 </div>
-                <div class="chat__profile-settings">
+                <!-- <div class="chat__profile-settings">
                     <div class="chat__decorative-dot"></div>
                     <div class="chat__decorative-dot"></div>
-                </div>
+                </div> -->
             </div>
             <ul class="chat__dialog-list">
                 <li class="chat__dialog-item dialog dialog_active">
@@ -92,11 +99,10 @@
                     <div class="dialog__top-block">
                         <div class="dialog__name">
                             <span class="dialog__username">Jarret Waelchi</span>
-                            <div class="dialog__online-status"></div>
                         </div>
                         <div class="dialog__last-message-time">03:30PM</div>
                     </div>
-                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                    <div class="dialog__last-message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив.</div>
                 </li>
                 <div class="chat__dialog-decorative-border"></div>
                 <li class="chat__dialog-item dialog">
@@ -104,11 +110,10 @@
                     <div class="dialog__top-block">
                         <div class="dialog__name">
                             <span class="dialog__username">Jarret Waelchi</span>
-                            <div class="dialog__online-status"></div>
                         </div>
                         <div class="dialog__last-message-time">03:30PM</div>
                     </div>
-                    <div class="dialog__last-message-text">When do you release the coded....</div>
+                    <div class="dialog__last-message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив</div>
                 </li>
                 <div class="chat__dialog-decorative-border"></div>
                 <li class="chat__dialog-item dialog">
@@ -116,11 +121,10 @@
                     <div class="dialog__top-block">
                         <div class="dialog__name">
                             <span class="dialog__username">Jarret Waelchi</span>
-                            <div class="dialog__online-status"></div>
                         </div>
                         <div class="dialog__last-message-time">03:30PM</div>
                     </div>
-                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                    <div class="dialog__last-message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив</div>
                 </li>
                 <div class="chat__dialog-decorative-border"></div>
                 <li class="chat__dialog-item dialog">
@@ -128,11 +132,10 @@
                     <div class="dialog__top-block">
                         <div class="dialog__name">
                             <span class="dialog__username">Jarret Waelchi</span>
-                            <div class="dialog__online-status"></div>
                         </div>
                         <div class="dialog__last-message-time">03:30PM</div>
                     </div>
-                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                    <div class="dialog__last-message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив</div>
                 </li>
                 <div class="chat__dialog-decorative-border"></div>
                 <li class="chat__dialog-item dialog">
@@ -140,11 +143,10 @@
                     <div class="dialog__top-block">
                         <div class="dialog__name">
                             <span class="dialog__username">Jarret Waelchi</span>
-                            <div class="dialog__online-status"></div>
                         </div>
                         <div class="dialog__last-message-time">03:30PM</div>
                     </div>
-                    <div class="dialog__last-message-text">When do you release the coded....</div>
+                    <div class="dialog__last-message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив</div>
                 </li>
                 <div class="chat__dialog-decorative-border"></div>
                 <li class="chat__dialog-item dialog">
@@ -152,11 +154,10 @@
                     <div class="dialog__top-block">
                         <div class="dialog__name">
                             <span class="dialog__username">Jarret Waelchi</span>
-                            <div class="dialog__online-status"></div>
                         </div>
                         <div class="dialog__last-message-time">03:30PM</div>
                     </div>
-                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                    <div class="dialog__last-message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив</div>
                 </li>
                 <div class="chat__dialog-decorative-border"></div>
                 <li class="chat__dialog-item dialog">
@@ -164,11 +165,10 @@
                     <div class="dialog__top-block">
                         <div class="dialog__name">
                             <span class="dialog__username">Jarret Waelchi</span>
-                            <div class="dialog__online-status"></div>
                         </div>
                         <div class="dialog__last-message-time">03:30PM</div>
                     </div>
-                    <div class="dialog__last-message-text">Hey jarret how you doing, whe...</div>
+                    <div class="dialog__last-message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив</div>
                 </li>
             </ul>
             <div class="chat__chatting-window">
@@ -189,15 +189,49 @@
                         </div>
                         <div class="chat__message-text">Привет! Окей, гуд. Давай начнем работу с 20к за бит. Для постоянных клиентов у меня скидки</div>
                     </li>
+                    <li class="chat__message">
+                        <img src="../src/img/notVector/userpic2.png" alt="chat profile image" class="chat__message-userpic">
+                        <div class="chat__message-header">
+                            <span class="chat__message-username">Orval Casper</span>
+                            <div class="chat__message-time">11:59AM</div>
+                        </div>
+                        <div class="chat__message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив</div>
+                    </li>
+                    <li class="chat__message">
+                        <img src="../src/img/notVector/userpic-chat.png" alt="chat profile image" class="chat__message-userpic">
+                        <div class="chat__message-header">
+                            <span class="chat__message-username">Orval Casper</span>
+                            <div class="chat__message-time">11:59AM</div>
+                        </div>
+                        <div class="chat__message-text">Привет! Окей, гуд. Давай начнем работу с 20к за бит. Для постоянных клиентов у меня скидки</div>
+                    </li>
+                    <li class="chat__message">
+                        <img src="../src/img/notVector/userpic2.png" alt="chat profile image" class="chat__message-userpic">
+                        <div class="chat__message-header">
+                            <span class="chat__message-username">Orval Casper</span>
+                            <div class="chat__message-time">11:59AM</div>
+                        </div>
+                        <div class="chat__message-text">Привет! Понравились твои биты, брат. Хотел заказать у тебя эксклюзив</div>
+                    </li>
+                    <li class="chat__message">
+                        <img src="../src/img/notVector/userpic-chat.png" alt="chat profile image" class="chat__message-userpic">
+                        <div class="chat__message-header">
+                            <span class="chat__message-username">Orval Casper</span>
+                            <div class="chat__message-time">11:59AM</div>
+                        </div>
+                        <div class="chat__message-text">Привет! Окей, гуд. Давай начнем работу с 20к за бит. Для постоянных клиентов у меня скидки</div>
+                    </li>
                 </ul>
                 <div class="chat__typing-block typing-block">
-                    <img src="../src/img/notVector/userpic-chat2.png" alt="userpic" class="typing-block__avatar">
-                    <input placeholder="Write something..." class="search-form__input explore__search-form" type="text">
+                    <img src="../src/img/notVector/author1.png" alt="userpic" class="typing-block__avatar">
+                    <form class="typing-block__form" action="">
+                        <input placeholder="Write something..." class="search-form__input explore__search-form" type="text">
+                        <input class="search-form__input explore__search-form" type="submit" value="">
+                    </form>
+                    <!-- <input placeholder="Write something..." class="search-form__input explore__search-form" type="text">
                     <div class="typing-block__buttons">
                         <img src="../src/img/svg/chat-Send-icon.svg" alt="chat-button-icon" class="typing-block__button">
-                        <img src="../src/img/svg/chat-add-doc-icon.svg" alt="chat-button-icon" class="typing-block__button">
-                        <img src="../src/img/svg/chat-emoji-icon.svg" alt="chat-button-icon" class="typing-block__button">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

@@ -17,6 +17,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: #0A0A0A;
+        border-radius: 8px;
+        padding: 16px 16px 24px;
     }
     &__avatar {
         border-radius: 50%;

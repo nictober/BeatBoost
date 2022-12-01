@@ -1,6 +1,7 @@
 .explore {
     display: flex;
     padding-top: 48px;
+    padding-left: 120px;
 
     @include phones {
         padding-top: 24px;
@@ -163,6 +164,7 @@
     &__filter-category {
         display: flex;
         gap: 7px;
+        white-space: nowrap;
     }
     &__filter-name {
         color: #B8B8B8;
@@ -176,8 +178,7 @@
             background: #0F0F0F;
         }
     }
-    &__playlist {
-        border-top: #bd1717 1px solid;
-        padding-top: 12px;
-    }
+    // &__playlist {
+    //     padding-top: 12px;
+    // }
 }

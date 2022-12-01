@@ -1,13 +1,29 @@
 .playlist {
     position: relative;
     flex-shrink: 0;
+    padding: 8px 8px 16px 8px;
+    background: #0A0A0A;
+    border-radius: 8px;
 
+    &__about {
+        background: #0F0F0F;
+        border-radius: 4px;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    &__text-container {
+        padding: 0 12px;
+    }
+    &__type {
+        font-weight: 500;
+        font-size: 10px;
+    }
     &__statistic {
         display: flex;
         gap: 2px;
-        font-weight: 300;
-        font-size: 10px;
-        color: #B8B8B8;
+        font-weight: 500;
+        font-size: 12px;
+        color: #fff;
     }
     &__title {
         font-weight: 600;
@@ -24,8 +40,9 @@
     }
     &__cover-shadow {
         position: absolute;
-        top: 26px;
-        left: 7px;
+        top: 9%;
+        left: 7%;
+    
         @include phones {
             top: 16px;
             left: 6px;

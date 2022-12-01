@@ -1,10 +1,12 @@
 .login-block {
     display: flex;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 10px;
     margin-right: 32px;
-    gap: 14px;
+    // gap: 14px;
     position: relative;
     white-space: nowrap;
+    color: #fff;
     @include phones {
         display: none;
     }
@@ -15,12 +17,13 @@
     &__register {
 
         &::after {
-            content: "";
-            border-left: solid 1px white;
-            position: absolute;
-            height: 22.5px;
-            right: 43px;
-            top: -4px;
+            content: "/";
+            // border-left: solid 1px white;
+            // position: absolute;
+            // height: 22.5px;
+            // right: 43px;
+            // top: -4px;
+            margin: 0 4px;
             @extend %media-tablets-none;
         }
     }

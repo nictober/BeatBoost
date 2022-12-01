@@ -13,14 +13,27 @@
     &__tracklist-header {
         display: flex;
         gap: 24px;
-        margin-bottom: 11px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid #1E1E1E;
+        padding-bottom: 12px;
     }
     &__tracklist-tab {
         font-weight: 500;
         font-size: 14px;
         color: #1E1E1E;
+        background: #0A0A0A;
+        border-radius: 4px;
+        padding: 10px 12px;
         &_active {
-            color: white;
+            background: #1E1E1E;
+            color: #fff;
         }
+    }
+    &__author {
+        width: fit-content;
+        margin-bottom: 24px;
+    }
+    &__releases {
+        justify-content: center;
     }
 }

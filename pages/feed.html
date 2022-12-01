@@ -73,243 +73,352 @@
         </div>
     </header>
     <div class="wrapper">
-        <form class="search-form">
-            <div class="search-form__hint-block">
-                <input placeholder="Что вы ищете?" class="search-form__input explore__search-form" type="text">
-            </div>
-        </form>
         <section class="feed">
-            <div class="explore__categories-sideblock feed__sideblock">
-                <div class="explore__title">Категории</div>
-                <ul class="explore__categories-list feed__categories-list">
-                    <li class="explore__category">Все категории</li>
-                    <li class="explore__category explore__category_active">Биты</li>
-                    <li class="explore__category">Релизы</li>
-                    <li class="explore__category">Звуки</li>
-                    <li class="explore__category">Сэмплы</li>
-                    <li class="explore__category">Люди</li>
-                </ul>
-                <div class="explore__title">Популярные запросы</div>
-                <ul class="genres__hashtags">
-                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#160bpm</li>
-                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
-                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#Rock</li>
-                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#160bpm</li>
+            <div class="side-filter">
+                <div class="side-filter__title">Категории</div>
+                <ul class="side-filter__types">
+                    <li class="side-filter__type">Рекомендации</li>
+                    <li class="side-filter__type">Только подписки</li>
                 </ul>
             </div>
             <div class="explore__main-block feed__mainblock">
-                <div class="chat__dialog-item dialog">
-                    <img src="../src/img/notVector/author1.png" alt="chat profile image" class="dialog__userpic feed__poster-image-main">
-                    <div class="dialog__top-block">
-                        <div class="dialog__name">
-                            <span class="dialog__username">Jarret Waelchi</span>
-                            <span class="feed__time-after">• 12 h.</span>
-                        </div>
+                <form class="search-form">
+                    <div class="search-form__hint-block">
+                        <input placeholder="Что вы ищете?" class="search-form__input explore__search-form" type="text">
                     </div>
-                    <div class="dialog__last-message-text">@Animestar</div>
-                </div>
-                <div class="history__chosen-buy-card">
-                    <div class="history__track-cover">
-                        <img src="../src/img/notVector/album-cover-hires.png" class="history__buy-img"></img> 
+                </form>
+                <div class="filter">
+                    <div class="filter__title">
+                        <span class="filter__main-title">Лента</span>
                     </div>
-                    <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-top">
-                        <div class="history__buy-title">Arhvic Demolsih</div>
-                        <div class="track__creator-wrapper">
-                            <h5 class="track__creator">Russian Label</h5>
-                            <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
-                        </div>
-                    </div>
-                    <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-bot">
-                        <span class="history__chosen-buy-price">24000₽</span>
-                        <span class="history__chosen-buy-album-status">Album Out</span>
-                    </div>
-                    <span class="history__track-count">32 трека</span>
-                </div>
-                <ul class="genres__hashtags feed__hashtags">
-                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#SovietWave</li>
-                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#VaporWave</li>
-                </ul>
-                <div class="feed__bot-block">
-                    <ul class="feed__buttons">
-                        <li class="feed__button">
-                            <img src="../src/img/svg/feed-heart-icon.svg" alt="heart icon" class="feed__button-img">
-                            <span class="feed__button-text">5K</span>
+                    <ul class="explore__filter-dropdowns-list filter__dropdowns-list">
+                        <ul class="filter__dropdown">
+                            <li class="filter__category">
+                                <span class="filter__name">Сначала новые</span>
+                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="angle down">
+                            </li>
+                        </ul>
+                        <ul class="filter__dropdown">
+                            <li class="filter__category">
+                                <span class="filter__name">Только биты</span>
+                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="angle down">
+                            </li>
+                        </ul>
+                        <ul class="filter__dropdown">
+                            <li class="filter__category">
+                                <span class="filter__name">Бесплатное скачивание</span>
+                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="angle down">
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="filter__chosen-filters">
+                        <li class="filter__chosen-filter">
+                            <span class="filter__name">#Fight</span>
                         </li>
-                        <li class="feed__button">
-                            <img src="../src/img/svg/feed-Share.svg" alt="share icon" class="feed__button-img">
-                            <span class="feed__button-text">12</span>
+                        <li class="filter__chosen-filter">
+                            <span class="filter__name">#VaporWave</span>
                         </li>
-                        <li class="feed__button">
-                            <img src="../src/img/svg/feed-Share.svg" alt="heat icon" class="feed__button-img">
-                            <span class="feed__button-text">24</span>
+                        <li class="filter__chosen-filter">
+                            <span class="filter__name">#Fight</span>
+                        </li>
+                        <li class="filter__chosen-filter">
+                            <span class="filter__name">#Fight</span>
+                        </li>
+                        <li class="filter__chosen-filter">
+                            <img src="../src/img/svg/plus-icon-gray.svg" alt="plus icon">
+                            <span class="filter__name">Добавить тег...</span>
                         </li>
                     </ul>
-                    <div class="feed__views">
-                        <img src="../src/img/svg/eye-icon.svg" alt="heat icon" class="feed__button">  
-                        <span class="feed__view-count">23K</span>
-                    </div>
                 </div>
-                <div class="feed__comments comments">
-                    <div class="comments__header">
-                        <span class="comments__comment-count">24 комментария</span>
-                        <div class="comments__sort">
-                            <span class="comments__sort-title">Сначала интересные</span>
-                            <img src="../src/img/svg/thin-angle-down.svg" alt="angle down" class="comments__dropdown-img">
+                <ul class="feed__posts">
+                    <li class="feed__post">
+                        <div class="feed__post-header">
+                            <div class="feed__post-title">Новый релиз от</div>
+                            <div class="feed__poster">
+                                <img src="../src/img/notVector/author1.png" alt="chat profile image" class="feed__poster-image-main">
+                                <span class="feed__poster-name">Александр</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="comments__comment">
-                        <img src="../src/img/notVector/author3.png" alt="chat profile image" class="feed__poster-image">
-                        <div class="comments__comment-top-text">
-                            <div class="dialog__top-block">
-                                <div class="dialog__name">
-                                    <span class="dialog__username">Jarret Waelchi</span>
-                                    <span class="feed__time-after">• 12 h.</span>
+                        <div class="feed__track-container">
+                            <div class="feed__track-card">
+                                <div class="history__track-cover">
+                                    <img src="../src/img/notVector/album-cover-hires.png" class="history__buy-img"></img> 
+                                </div>
+                                <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-top">
+                                    <div class="history__buy-title">Arhvic Demolsih</div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                    </div>
+                                </div>
+                                <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-bot">
+                                    <span class="history__chosen-buy-price">24000₽</span>
+                                    <span class="history__chosen-buy-album-status">Album Out</span>
+                                </div>
+                                <span class="feed__track-count">32 трека</span>
+                            </div>
+                            <div class="feed__track-card-shadow-big"></div>
+                            <div class="feed__track-card-shadow-small"></div>
+                        </div>
+                        <div class="feed__bot-block">
+                            <ul class="feed__buttons">
+                                <li class="feed__button">
+                                    <img src="../src/img/svg/feed-hollow-heart.svg" alt="heart icon" class="feed__button-img">
+                                    <span class="feed__button-text">5K</span>
+                                </li>
+                                <li class="feed__button">
+                                    <img src="../src/img/svg/feed-comments.svg" alt="share icon" class="feed__button-img">
+                                    <span class="feed__button-text">5K</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="feed__comments comments">
+                            <div class="comments__header">
+                                <span class="comments__comment-count">24 комментария</span>
+                                <div class="comments__sort">
+                                    <span class="comments__sort-title">Сначала интересные</span>
+                                    <img src="../src/img/svg/thin-angle-down.svg" alt="angle down" class="comments__dropdown-img">
                                 </div>
                             </div>
-                            <div class="dialog__last-message-text">@Animestar</div>
-                        </div>
-                        <div class="comments__comment-text">Впечатляет</div>
-                        <div class="comments__comment-likes-button">
-                            <img src="../src/img/svg/feed-heart-icon.svg" alt="heart icon" class="comments__comment-likes-img">
-                            <span class="comments__comment-likes-count">4</span>
-                        </div>
-                    </div>
-                    <div class="comments__comment">
-                        <img src="../src/img/notVector/author4.png" alt="chat profile image" class="feed__poster-image">
-                        <div class="comments__comment-top-text">
-                            <div class="dialog__top-block">
-                                <div class="dialog__name">
-                                    <span class="dialog__username">Никита Туманов</span>
-                                    <span class="feed__time-after">• 12 h.</span>
+                            <div class="comments__comment">
+                                <div class="comments__author">
+                                    <img src="../src/img/notVector/author1.png" alt="chat profile image" class="feed__poster-image-main">
+                                    <span class="feed__poster-name">Орловский Огр</span>
+                                </div>
+                                <div class="comment__text">
+                                    Впечатляет
                                 </div>
                             </div>
-                            <div class="dialog__last-message-text">@Animestar</div>
+                            <div class="comments__comment">
+                                <div class="comments__author">
+                                    <img src="../src/img/notVector/author3.png" alt="chat profile image" class="feed__poster-image-main">
+                                    <span class="feed__poster-name">Вася Женекин</span>
+                                </div>
+                                <div class="comment__text">
+                                    О! Это реально крутой релиз, хотел бы с тобой заколабиться, напиши в личку
+                                </div>
+                            </div>
+                            <div class="comments__unwrap-button">
+                                <span>Показать больше</span>
+                            </div>
                         </div>
-                        <div class="comments__comment-text">Круто, мне нравится</div>
-                        <div class="comments__comment-likes-button">
-                            <img src="../src/img/svg/feed-heart-icon-gray.svg" alt="heart icon" class="comments__comment-likes-img">
-                            <span class="comments__comment-likes-count">4</span>
+                        
+                        <div class="chat__typing-block typing-block typing-block_comment">
+                            <img src="../src/img/notVector/userpic-chat2.png" alt="userpic" class="typing-block__avatar">
+                            <form class="typing-block__form" action="">
+                                <input placeholder="Write something..." class="search-form__input explore__search-form" type="text">
+                                <input class="search-form__input explore__search-form" type="submit" value="">
+                            </form>
+                            <!-- <div class="typing-block__buttons">
+                                <img src="../src/img/svg/chat-Send-icon.svg" alt="chat-button-icon" class="typing-block__button">
+                            </div> -->
                         </div>
-                    </div>
-                </div>
-                <div class="feed__unwrap-button">
-                    <span>Показать больше</span>
-                </div>
-                <div class="chat__typing-block typing-block typing-block_comment">
-                    <img src="../src/img/notVector/userpic-chat2.png" alt="userpic" class="typing-block__avatar">
-                    <input placeholder="Write something..." class="search-form__input explore__search-form" type="text">
-                    <div class="typing-block__buttons">
-                        <img src="../src/img/svg/chat-Send-icon.svg" alt="chat-button-icon" class="typing-block__button">
-                        <img src="../src/img/svg/chat-add-doc-icon.svg" alt="chat-button-icon" class="typing-block__button">
-                        <img src="../src/img/svg/chat-emoji-icon.svg" alt="chat-button-icon" class="typing-block__button">
-                    </div>
-                </div>
-                <div class="chat__dialog-item dialog">
-                    <img src="../src/img/notVector/author1.png" alt="chat profile image" class="dialog__userpic feed__poster-image-main">
-                    <div class="dialog__top-block">
-                        <div class="dialog__name">
-                            <span class="dialog__username">Jarret Waelchi</span>
-                            <span class="feed__time-after">• 12 h.</span>
+                    </li>
+                    <li class="feed__post">
+                        <div class="feed__post-header">
+                            <div class="feed__post-title">Новый релиз от</div>
+                            <div class="feed__poster">
+                                <img src="../src/img/notVector/author1.png" alt="chat profile image" class="feed__poster-image-main">
+                                <span class="feed__poster-name">Александр</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dialog__last-message-text">@Animestar</div>
-                </div>
-                <div class="history__chosen-buy-card">
-                    <div class="history__track-cover">
-                        <img src="../src/img/notVector/album-cover-hires.png" class="history__buy-img"></img> 
-                    </div>
-                    <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-top">
-                        <div class="history__buy-title">Arhvic Demolsih</div>
-                        <div class="track__creator-wrapper">
-                            <h5 class="track__creator">Russian Label</h5>
-                            <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                        <div class="track feed__single-track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
+                                </div>
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__collection-name">Arhvic Live</div>
+                            <div class="track__price-block beats__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                        <div class="track__price-dropdown-text">Track out</div>
+                                        <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__time beats__track-time">3:03</div>
                         </div>
-                    </div>
-                    <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-bot">
-                        <span class="history__chosen-buy-price">24000₽</span>
-                        <span class="history__chosen-buy-album-status">Album Out</span>
-                    </div>
-                    <span class="history__track-count">32 трека</span>
-                </div>
-                <ul class="genres__hashtags feed__hashtags">
-                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#SovietWave</li>
-                    <li class="genres__hashtag button button_transparent-gray button_explore-hashtag">#VaporWave</li>
+                        <div class="feed__bot-block">
+                            <ul class="feed__buttons">
+                                <li class="feed__button">
+                                    <img src="../src/img/svg/feed-hollow-heart.svg" alt="heart icon" class="feed__button-img">
+                                    <span class="feed__button-text">5K</span>
+                                </li>
+                                <li class="feed__button">
+                                    <img src="../src/img/svg/feed-comments.svg" alt="share icon" class="feed__button-img">
+                                    <span class="feed__button-text">5K</span>
+                                </li>
+                            </ul>
+                            <!-- <div class="feed__views">
+                                <img src="../src/img/svg/eye-icon.svg" alt="heat icon" class="feed__button">  
+                                <span class="feed__view-count">23K</span>
+                            </div> -->
+                        </div>
+                        <div class="feed__comments comments">
+                            <div class="comments__header">
+                                <span class="comments__comment-count">24 комментария</span>
+                                <div class="comments__sort">
+                                    <span class="comments__sort-title">Сначала интересные</span>
+                                    <img src="../src/img/svg/thin-angle-down.svg" alt="angle down" class="comments__dropdown-img">
+                                </div>
+                            </div>
+                            <div class="comments__comment">
+                                <div class="comments__author">
+                                    <img src="../src/img/notVector/author1.png" alt="chat profile image" class="feed__poster-image-main">
+                                    <span class="feed__poster-name">Орловский Огр</span>
+                                </div>
+                                <div class="comment__text">
+                                    Впечатляет
+                                </div>
+                            </div>
+                            <div class="comments__comment">
+                                <div class="comments__author">
+                                    <img src="../src/img/notVector/author3.png" alt="chat profile image" class="feed__poster-image-main">
+                                    <span class="feed__poster-name">Вася Женекин</span>
+                                </div>
+                                <div class="comment__text">
+                                    О! Это реально крутой релиз, хотел бы с тобой заколабиться, напиши в личку
+                                </div>
+                            </div>
+                            <div class="comments__unwrap-button">
+                                <span>Показать больше</span>
+                            </div>
+                        </div>
+                        
+                        <div class="chat__typing-block typing-block typing-block_comment">
+                            <img src="../src/img/notVector/userpic-chat2.png" alt="userpic" class="typing-block__avatar">
+                            <form class="typing-block__form" action="">
+                                <input placeholder="Write something..." class="search-form__input explore__search-form" type="text">
+                                <input class="search-form__input explore__search-form" type="submit" value="">
+                            </form>
+                            <!-- <div class="typing-block__buttons">
+                                <img src="../src/img/svg/chat-Send-icon.svg" alt="chat-button-icon" class="typing-block__button">
+                            </div> -->
+                        </div>
+                    </li>
+                    <li class="feed__post">
+                        <div class="feed__post-header">
+                            <div class="feed__post-title">Новый релиз от</div>
+                            <div class="feed__poster">
+                                <img src="../src/img/notVector/author1.png" alt="chat profile image" class="feed__poster-image-main">
+                                <span class="feed__poster-name">Александр</span>
+                            </div>
+                        </div>
+                        <div class="track feed__single-track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
+                                </div>
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__collection-name">Arhvic Live</div>
+                            <div class="track__price-block beats__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                        <div class="track__price-dropdown-text">Track out</div>
+                                        <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__time beats__track-time">3:03</div>
+                        </div>
+                        <div class="feed__bot-block">
+                            <ul class="feed__buttons">
+                                <li class="feed__button">
+                                    <img src="../src/img/svg/feed-hollow-heart.svg" alt="heart icon" class="feed__button-img">
+                                    <span class="feed__button-text">5K</span>
+                                </li>
+                                <li class="feed__button">
+                                    <img src="../src/img/svg/feed-comments.svg" alt="share icon" class="feed__button-img">
+                                    <span class="feed__button-text">5K</span>
+                                </li>
+                            </ul>
+                            <!-- <div class="feed__views">
+                                <img src="../src/img/svg/eye-icon.svg" alt="heat icon" class="feed__button">  
+                                <span class="feed__view-count">23K</span>
+                            </div> -->
+                        </div>
+                        <div class="feed__comments comments">
+                            <div class="comments__header">
+                                <span class="comments__comment-count">24 комментария</span>
+                                <div class="comments__sort">
+                                    <span class="comments__sort-title">Сначала интересные</span>
+                                    <img src="../src/img/svg/thin-angle-down.svg" alt="angle down" class="comments__dropdown-img">
+                                </div>
+                            </div>
+                            <div class="comments__comment">
+                                <div class="comments__author">
+                                    <img src="../src/img/notVector/author1.png" alt="chat profile image" class="feed__poster-image-main">
+                                    <span class="feed__poster-name">Орловский Огр</span>
+                                </div>
+                                <div class="comment__text">
+                                    Впечатляет
+                                </div>
+                            </div>
+                            <div class="comments__comment">
+                                <div class="comments__author">
+                                    <img src="../src/img/notVector/author3.png" alt="chat profile image" class="feed__poster-image-main">
+                                    <span class="feed__poster-name">Вася Женекин</span>
+                                </div>
+                                <div class="comment__text">
+                                    О! Это реально крутой релиз, хотел бы с тобой заколабиться, напиши в личку
+                                </div>
+                            </div>
+                            <div class="comments__unwrap-button">
+                                <span>Показать больше</span>
+                            </div>
+                        </div>
+                        
+                        <div class="chat__typing-block typing-block typing-block_comment">
+                            <img src="../src/img/notVector/userpic-chat2.png" alt="userpic" class="typing-block__avatar">
+                            <form class="typing-block__form" action="">
+                                <input placeholder="Write something..." class="search-form__input explore__search-form" type="text">
+                                <input class="search-form__input explore__search-form" type="submit" value="">
+                            </form>
+                            <!-- <div class="typing-block__buttons">
+                                <img src="../src/img/svg/chat-Send-icon.svg" alt="chat-button-icon" class="typing-block__button">
+                            </div> -->
+                        </div>
+                    </li>
                 </ul>
-                <div class="feed__bot-block">
-                    <ul class="feed__buttons">
-                        <li class="feed__button">
-                            <img src="../src/img/svg/feed-heart-icon.svg" alt="heart icon" class="feed__button-img">
-                            <span class="feed__button-text">5K</span>
-                        </li>
-                        <li class="feed__button">
-                            <img src="../src/img/svg/feed-Share.svg" alt="share icon" class="feed__button-img">
-                            <span class="feed__button-text">12</span>
-                        </li>
-                        <li class="feed__button">
-                            <img src="../src/img/svg/feed-Share.svg" alt="heat icon" class="feed__button-img">
-                            <span class="feed__button-text">24</span>
-                        </li>
-                    </ul>
-                    <div class="feed__views">
-                        <img src="../src/img/svg/eye-icon.svg" alt="heat icon" class="feed__button">  
-                        <span class="feed__view-count">23K</span>
-                    </div>
-                </div>
-                <div class="feed__comments comments">
-                    <div class="comments__header">
-                        <span class="comments__comment-count">24 комментария</span>
-                        <div class="comments__sort">
-                            <span class="comments__sort-title">Сначала интересные</span>
-                            <img src="../src/img/svg/thin-angle-down.svg" alt="angle down" class="comments__dropdown-img">
-                        </div>
-                    </div>
-                    <div class="comments__comment">
-                        <img src="../src/img/notVector/author3.png" alt="chat profile image" class="feed__poster-image">
-                        <div class="comments__comment-top-text">
-                            <div class="dialog__top-block">
-                                <div class="dialog__name">
-                                    <span class="dialog__username">Jarret Waelchi</span>
-                                    <span class="feed__time-after">• 12 h.</span>
-                                </div>
-                            </div>
-                            <div class="dialog__last-message-text">@Animestar</div>
-                        </div>
-                        <div class="comments__comment-text">Впечатляет</div>
-                        <div class="comments__comment-likes-button">
-                            <img src="../src/img/svg/feed-heart-icon.svg" alt="heart icon" class="comments__comment-likes-img">
-                            <span class="comments__comment-likes-count">4</span>
-                        </div>
-                    </div>
-                    <div class="comments__comment">
-                        <img src="../src/img/notVector/author4.png" alt="chat profile image" class="feed__poster-image">
-                        <div class="comments__comment-top-text">
-                            <div class="dialog__top-block">
-                                <div class="dialog__name">
-                                    <span class="dialog__username">Никита Туманов</span>
-                                    <span class="feed__time-after">• 12 h.</span>
-                                </div>
-                            </div>
-                            <div class="dialog__last-message-text">@Animestar</div>
-                        </div>
-                        <div class="comments__comment-text">Круто, мне нравится</div>
-                        <div class="comments__comment-likes-button">
-                            <img src="../src/img/svg/feed-heart-icon-gray.svg" alt="heart icon" class="comments__comment-likes-img">
-                            <span class="comments__comment-likes-count">4</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="feed__unwrap-button">
-                    <span>Показать больше</span>
-                </div>
-                <div class="chat__typing-block typing-block typing-block_comment">
-                    <img src="../src/img/notVector/userpic-chat2.png" alt="userpic" class="typing-block__avatar">
-                    <input placeholder="Write something..." class="search-form__input explore__search-form" type="text">
-                    <div class="typing-block__buttons">
-                        <img src="../src/img/svg/chat-Send-icon.svg" alt="chat-button-icon" class="typing-block__button">
-                        <img src="../src/img/svg/chat-add-doc-icon.svg" alt="chat-button-icon" class="typing-block__button">
-                        <img src="../src/img/svg/chat-emoji-icon.svg" alt="chat-button-icon" class="typing-block__button">
-                    </div>
-                </div>
         </section>
     </div>
     <footer class="footer">

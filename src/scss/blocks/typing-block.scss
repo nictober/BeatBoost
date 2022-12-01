@@ -3,15 +3,31 @@
     align-items: center;
     background: #060606;
 
+    input[type="submit"] {
+        background: url(../src/img/svg/submit-button-new.svg) no-repeat 50% 50%;;
+        border: none;
+        max-width: 32px;
+    }
+
     &_comment {
-        position: static;
-        padding: 0 0 24px 0;
+        background: none;
+        position: relative;
+        padding: 0 16px 24px;
+        gap: 0;
 
         .typing-block__button:nth-child(2) {
             display: none;
         }
         .typing-block__button:nth-child(3) {
             display: none;
+        }
+
+        .typing-block__buttons {
+            position: absolute;
+            left: 96%;
+        }
+        .typing-block__avatar {
+            margin-right: 8px;
         }
     }
 
@@ -32,5 +48,11 @@
                 display: block;
             }
         }
+    }
+    &__form {
+        flex-grow: 1;
+        display: flex;
+        background: #1D1D1D;
+        border-radius: 8px;
     }
 }

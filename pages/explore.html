@@ -105,7 +105,7 @@
     </section>
     <div class="wrapper">
         <section class="explore">
-            <div class="explore__categories-sideblock">
+            <!-- <div class="explore__categories-sideblock">
                 <div class="explore__title">Категории</div>
                 <ul class="explore__categories-list">
                     <li class="explore__category">Все категории</li>
@@ -114,6 +114,26 @@
                     <li class="explore__category">Звуки</li>
                     <li class="explore__category">Сэмплы</li>
                     <li class="explore__category">Люди</li>
+                </ul>
+            </div> -->
+            <div class="side-filter">
+                <div class="side-filter__title">Категории</div>
+                <ul class="side-filter__types">
+                    <li class="side-filter__type side-filter__type_explore">
+                        <div class="side-filter__subtitle">Аудио</div>
+                        <ul class="side-filter__categories">
+                            <li class="side-filter__category">Биты</li>
+                            <li class="side-filter__category">Звуки</li>
+                        </ul>
+                    </li>
+                    <li class="side-filter__type side-filter__type_explore">
+                        <div class="side-filter__subtitle">Релизы</div>
+                        <ul class="side-filter__categories">
+                            <li class="side-filter__category">Коллекции</li>
+                            <li class="side-filter__category">Пак звуков</li>
+                        </ul>
+                    </li>
+                    <li class="side-filter__type side-filter__type_explore">Аудио</li>
                 </ul>
             </div>
             <div class="explore__main-block">
@@ -126,60 +146,46 @@
                         </div>
                     </div>
                 </form>
-                <div class="explore__filter-block">
-                    <div class="explore__main-filter">
-                        <span class="explore__title">Биты</span>
-                        <img src="../src/img/svg/thin-angle-down.svg" alt="thin angle down">
+                <div class="filter">
+                    <div class="filter__title">
+                        <span class="filter__main-title">Аудио</span>
                     </div>
-                    <div class="explore__subtitle-block">
-                        <img src="../src/img/svg/filter-leftside-icon.svg" alt="filters icon">
-                        <span class="explore__subtitle">Фильтры</span>
-                    </div>
-                    <ul class="explore__filter-dropdowns-list">
-                        <ul class="explore__filer-dropdown">
-                            <li class="explore__filter-category">
-                                <span class="explore__filter-name">Жанры</span>
+                    <ul class="explore__filter-dropdowns-list filter__dropdowns-list">
+                        <ul class="filter__dropdown">
+                            <li class="filter__category">
+                                <span class="filter__name">Жанр: Рок</span>
                                 <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="angle down">
                             </li>
                         </ul>
-                        <ul class="explore__filer-dropdown">
-                            <li class="explore__filter-category">
-                                <span class="explore__filter-name">Тип бита</span>
+                        <ul class="filter__dropdown">
+                            <li class="filter__category">
+                                <span class="filter__name">Тип бита: Не выбрано</span>
                                 <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="angle down">
                             </li>
                         </ul>
-                        <ul class="explore__filer-dropdown">
-                            <li class="explore__filter-category">
-                                <span class="explore__filter-name">Цена</span>
+                        <ul class="filter__dropdown">
+                            <li class="filter__category">
+                                <span class="filter__name">Цена:</span>
                                 <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="angle down">
                             </li>
                         </ul>
                     </ul>
-                    <div class="explore__display-option-buttons">
-                        <div class="explore__display-option-wrapper">
-                            <img class="explore__option-button" src="../src/img/svg/filter-equal-icon.svg" alt="equal icon">
-                        </div>
-                        <div class="explore__display-option-wrapper explore__display-option-wrapper_active">
-                            <img class="explore__option-button" src="../src/img/svg/filter-dots-icon.svg" alt="equal icon">
-                        </div>
-
-                    </div>
-                    <ul class="explore__chosen-filters-block">
-                        <li class="explore__chosen-filter">
-                            <span class="explore__filter-name">Жанр: Рок</span>
-                            <img src="../src/img/svg/cross-icon.svg" alt="cross icon">
+                    <ul class="filter__chosen-filters">
+                        <li class="filter__chosen-filter">
+                            <span class="filter__name">#Fight</span>
                         </li>
-                        <li class="explore__chosen-filter">
-                            <span class="explore__filter-name">#Панк</span>
-                            <img src="../src/img/svg/cross-icon.svg" alt="cross icon">
+                        <li class="filter__chosen-filter">
+                            <span class="filter__name">#VaporWave</span>
                         </li>
-                        <li class="explore__chosen-filter">
-                            <span class="explore__filter-name">#160bpm</span>
-                            <img src="../src/img/svg/cross-icon.svg" alt="cross icon">
+                        <li class="filter__chosen-filter">
+                            <span class="filter__name">#Fight</span>
                         </li>
-                        <li class="explore__chosen-filter">
+                        <li class="filter__chosen-filter">
+                            <span class="filter__name">#Fight</span>
+                        </li>
+                        <li class="filter__chosen-filter">
                             <img src="../src/img/svg/plus-icon-gray.svg" alt="plus icon">
-                            <span class="explore__filter-name">Add new...</span>
+                            <span class="filter__name">Добавить тег...</span>
                         </li>
                     </ul>
                 </div>

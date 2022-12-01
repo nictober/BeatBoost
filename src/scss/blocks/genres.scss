@@ -14,7 +14,7 @@
         margin-bottom: 24px;
     }
     &__genres-scrollblock-wrapper {
-        padding: 40px 24px 48px 48px;
+        padding: 40px 24px 48px 0px;
         min-width: 60%;
         border-right: solid 2px rgba(15, 15, 15, 1);
         @include phones {
@@ -26,11 +26,12 @@
     }
     &__scrollblock {
         gap: 16px;
+        margin-bottom: 24px;
     }
     &__card {
         position: relative;
         flex-shrink: 0;
-
+        
         &::after {
             content: "";
             display: block;    
@@ -59,7 +60,7 @@
         line-height: 0;
     }
     &__genre-hashtag-block {
-        padding: 40px 0 48px 40px;
+        padding: 40px 20px 48px 40px;
         max-width: 40%;
         @include phones {
             padding: 0;
@@ -74,10 +75,13 @@
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
+        margin-bottom: 24px;
     }
     &__hashtag {
         color: #B8B8B8;
         font-size: 12px;
         font-weight: 500;
+        padding: 8px 12px;
+        background-color: #0F0F0F;
     }
 }

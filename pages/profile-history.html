@@ -92,7 +92,7 @@
                         <li class="profile__hashtag button button_transparent-gray">#VaporWave</li>
                     </ul>
                     <ul class="profile__buttons">
-                        <li class="profile__button button button_red button_listen">Cлушать</li>
+                        <li class="profile__button button button_red button_write">Написать</li>
                         <li class="profile__button button button_transparent-red button_subscribe">Подписаться</li>
                     </ul>
                 </div>
@@ -120,7 +120,7 @@
                 <div class="history__side-block">
                     <span class="history__title">История покупок</span>
                     <ul class="history__side-list">
-                        <li class="history__side-card">
+                        <li class="history__side-card history__side-card_active">
                             <div class="history__side-card-inner-wrap">
                                 <div class="history__side-card-text">
                                     <span class="history__buy-num">#45843</span>
@@ -171,39 +171,70 @@
                 </div>
                 <div class="history__chosen-buy">
                     <span class="history__title">Выбранная покупка</span>
-                    <div class="history__chosen-buy-card">
-                        <div class="history__track-cover">
-                            <img src="../src/img/notVector/album-cover-hires.png" class="history__buy-img"></img> 
-                        </div>
-                        <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-top">
-                            <div class="history__buy-title">Arhvic Demolsih</div>
-                            <div class="track__creator-wrapper">
-                                <h5 class="track__creator">Russian Label</h5>
-                                <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                    <div class="history__chosen-buy-card-container">
+                        <div class="history__chosen-buy-card">
+                            <div class="history__track-cover">
+                                <img src="../src/img/notVector/album-cover-hires.png" class="history__buy-img"></img> 
                             </div>
+                            <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-top">
+                                <div class="history__buy-title">Arhvic Demolsih</div>
+                                <div class="track__creator-wrapper">
+                                    <h5 class="track__creator">Russian Label</h5>
+                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                </div>
+                            </div>
+                            <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-bot">
+                                <span class="history__chosen-buy-price">24000₽</span>
+                                <span class="history__chosen-buy-album-status">Album Out</span>
+                            </div>
+                            <span class="history__track-count">32 трека</span>
                         </div>
-                        <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-bot">
-                            <span class="history__chosen-buy-price">24000₽</span>
-                            <span class="history__chosen-buy-album-status">Album Out</span>
-                        </div>
-                        <span class="history__track-count">32 трека</span>
+                        <div class="history__chosen-buy-card-shadow-big"></div>
+                        <div class="history__chosen-buy-card-shadow-small"></div>
                     </div>
-                    <div class="history__chosen-buy-card">
-                        <div class="history__track-cover">
-                            <img src="../src/img/notVector/album-cover-hires.png" class="history__buy-img"></img> 
-                        </div>
-                        <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-top">
-                            <div class="history__buy-title">Arhvic Demolsih</div>
-                            <div class="track__creator-wrapper">
-                                <h5 class="track__creator">Russian Label</h5>
-                                <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                    <li class="tracklist__track track history__track">
+                        <div class="track__number">1</div> 
+                        <div class="track__naming-wrapper">
+                            <div class="track__cover">
+                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
+                            </div>
+                            <div class="track__info">
+                                <div class="track__name-wrapper">
+                                    <h5 class="track__title">Arhvic Demolsih</h5>
+                                    <div class="track__price-icon">
+                                        <div class="track__price-icon-text">Free</div>
+                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                    </div>
+                                </div>
+                                <div class="track__creator-wrapper">
+                                    <h5 class="track__creator">Russian Label</h5>
+                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                </div>
                             </div>
                         </div>
-                        <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-bot">
-                            <span class="history__chosen-buy-price">24000₽</span>
-                            <span class="history__chosen-buy-album-status">Album Out</span>
+                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__time">3:03</div>
+                    </li>
+                    <div class="history__chosen-buy-card-container">
+                        <div class="history__chosen-buy-card">
+                            <div class="history__track-cover">
+                                <img src="../src/img/notVector/album-cover-hires.png" class="history__buy-img"></img> 
+                            </div>
+                            <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-top">
+                                <div class="history__buy-title">Arhvic Demolsih</div>
+                                <div class="track__creator-wrapper">
+                                    <h5 class="track__creator">Russian Label</h5>
+                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                </div>
+                            </div>
+                            <div class="history__chosen-buy-card-wrapper history__chosen-buy-card-wrapper_mobile-bot">
+                                <span class="history__chosen-buy-price">24000₽</span>
+                                <span class="history__chosen-buy-album-status">Album Out</span>
+                            </div>
+                            <span class="history__track-count">32 трека</span>
                         </div>
-                        <span class="history__track-count">32 трека</span>
+                        <div class="history__chosen-buy-card-shadow-big"></div>
+                        <div class="history__chosen-buy-card-shadow-small"></div>
                     </div>
                 </div>
             </div>

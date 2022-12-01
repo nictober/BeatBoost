@@ -26,12 +26,20 @@
     }
     &_transparent-gray {
         background: transparent;
-        border: solid 1px #0F0F0F;        
+        border: solid 1px #0F0F0F;    
+        padding: 14px 12px;    
     }
     &_listen {
         
+        // &::before {
+        //     content: url("../src/img/svg/play-symbol.svg");
+        //     margin-right: 4px;
+        // }
+    }
+    &_write {
+        
         &::before {
-            content: url("../src/img/svg/play-symbol.svg");
+            content: url("../src/img/svg/write-button-icon.svg");
             margin-right: 4px;
         }
     }
@@ -44,6 +52,14 @@
     }
     &_explore-hashtag {
         padding: 8px 16px;
+    }
+    &_cart {
+        padding: 8px;
+        background: transparent;
+        border: 1px solid #1E1E1E;;
+    }
+    &_see-more {
+        font-size: 12px;
     }
 
 }
