@@ -1,5 +1,6 @@
 .search-form {
     margin-right: 32px;
+    grid-area: 1 / 2 / 2 / 3;
 
     &__hint-block {
         display: flex;
@@ -23,14 +24,26 @@
     &__categories {
         display: flex;
         position: absolute;
-        left: 250px;
-        margin-right: 5px;
+        left: 260px;
 
         @include phones {
             left: 140px;
         }
     }
+    &__category {
+        margin-right: 7px;
+    }
     @extend %media-phones-none;
+}
+section {
+    .search-form {
+        @include phones {
+            display: block;
+            order: -1;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
 }
 
 .search-form-mobile {

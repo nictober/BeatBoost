@@ -3,18 +3,17 @@
     @include laptops {
         display: block;
         order: -1;
-        margin-right: 12px;
+        // margin-right: 12px;
     }
     @include phones {
         display: block;
-        order: 3;
+        // order: 3;
     }
 }
 .burger-menu__element1, .burger-menu__element2, .burger-menu__element3 {
-    width: 16px;
+    width: 20px;
     height: 2px;
     background-color: rgb(255, 255, 255);
     margin: 5px 0;
     transition: 0.3s;
-    border-radius: 0.83px;
 }

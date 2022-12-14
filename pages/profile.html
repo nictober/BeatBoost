@@ -12,12 +12,12 @@
 
     <header class="header">
         <div class="header__side-wrapper">
-            <a href="#" class="header__logo">
+            <a href="../index.html" class="header__logo">
                 <img src="../src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="header__logo-orig">
             </a>
-            <a href="#" class="header__logo-mobile">
-                <img src="../src/img/svg/logo-mini.svg" alt="beatBoost logo" class="header__logo-orig">
-            </a>
+            <!-- <a href="./html" class="header__logo-mobile">
+                <img src="../src/img/svg/logo-mobile.svg" alt="beatBoost logo" class="header__logo-orig">
+            </a> -->
             <div class="header__burger-menu burger-menu">
                 <div class="burger-menu__element1"></div>
                 <div class="burger-menu__element2"></div>
@@ -29,33 +29,33 @@
                     <input placeholder="Что вы ищете?" class="search-form__input" type="text">
                     <div class="search-form__categories">
                         <div class="search-form__category">Биты</div>
-                        <img src="../src/img/svg/arrow-down.svg" alt="arrow down icon">
+                        <img src="../src/img/svg/arrow-down-fullfilled-gray.svg" alt="arrow down icon">
                     </div>
                 </div>
             </form>
             <nav class="header__site-menu">
-                <ul class="site-menu">
+                <div class="site-menu">
                     <li class="site-menu__item">
-                        <a href="#" class="site-menu__link">Поиск</a>
+                        <a href="./explore.html" class="site-menu__link">Поиск</a>
                     </li>
                     <li class="site-menu__item">
-                        <a href="#" class="site-menu__link">Лента</a>
+                        <a href="./feed.html" class="site-menu__link">Лента</a>
                     </li>
                     <li class="site-menu__item">
-                        <a href="#" class="site-menu__link">Треки</a>
+                        <a href="./track-page.html" class="site-menu__link">Треки</a>
                     </li>
                     <li class="site-menu__item">
-                        <a href="#" class="site-menu__link">Релизы</a>
+                        <a href="./collection.html" class="site-menu__link">Релизы</a>
                     </li>
-                </ul>
+                </div>
             </nav>
         </div>
         <div class="header__side-wrapper">
             <div class="login-block">
-                <div class="login-block__register">Создать аккаунт</div>
-                <div class="login-block__sign-in">Войти</div>
+                <a href="./register.html" class="login-block__register">Создать аккаунт</a>
+                <a href="./login.html" class="login-block__sign-in">Войти</a>
             </div>
-            <div class="header__begin-button button">Начать продавать</div>
+            <a href="./login.html" class="header__begin-button button">Начать продавать</a>
             <form class="search-form-mobile">
                 <div class="search-form__hint-block">
                     <!-- <img src="../src/img/svg/search-icon.svg" alt="magnifier image"> -->
@@ -67,9 +67,9 @@
                 </div>
             </form>
             <div class="header__cart-vidget cart-vidget">
-                <img src="../src/img/svg/cart-shopping.svg" alt="cart icon">
+                <img class="button button_cart" src="../src/img/svg/cart-shopping.svg" alt="cart icon">
                 <div class="cart-vidget__counter">1</div>
-                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
+                <img class="cart-vidget__arrow" src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
             </div>
         </div>
     </header>
@@ -106,7 +106,8 @@
                 <li class="profile__navigation-link">Коллекция звуков</li>   
             </ul>
             <div class="profile__navigation-mobile-wrapper">
-                <span class="profile__navigation-mobile-current-page">Общая информация</span>
+                <div class="profile__navigation-mobile-subwrapper">
+                    <span class="profile__navigation-mobile-current-page">Общая информация</span>
                     <ul class="profile__navigation-mobile-dropdown">
                         <li><a href="#">История покупок</a></li>
                         <li><a href="#">Биты</a></li>
@@ -115,10 +116,11 @@
                         <li><a href="#">Коллекция звуков</a></li>
                     </ul>
                     <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                </div>
             </div>
             <div class="profile__general-info">
                 <ul class="profile__tracklist tracklist">
-                    <h3 class="profile__title">Популярные биты</h3>
+                    <h3 class="profile__title">Биты</h3>
                     <li class="tracklist__header">
                         <div class="tracklist__header-elem">#</div>
                         <div class="tracklist__header-elem">Название</div>
@@ -146,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
                         <div class="track__price-block">
                             <div class="track__price">
                                 <div class="track__price-count">2990₽</div>
@@ -182,7 +184,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
                         <div class="track__price-block">
                             <div class="track__price">
                                 <div class="track__price-count">2990₽</div>
@@ -218,7 +220,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
                         <div class="track__price-block">
                             <div class="track__price">
                                 <div class="track__price-count">2990₽</div>
@@ -254,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
                         <div class="track__price-block">
                             <div class="track__price">
                                 <div class="track__price-count">2990₽</div>
@@ -290,7 +292,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
                         <div class="track__price-block">
                             <div class="track__price">
                                 <div class="track__price-count">2990₽</div>
@@ -326,7 +328,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
                         <div class="track__price-block">
                             <div class="track__price">
                                 <div class="track__price-count">2990₽</div>
@@ -362,7 +364,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
                         <div class="track__price-block">
                             <div class="track__price">
                                 <div class="track__price-count">2990₽</div>
@@ -398,7 +400,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
                         <div class="track__price-block">
                             <div class="track__price">
                                 <div class="track__price-count">2990₽</div>
@@ -434,7 +436,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live</div>
+                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
                         <div class="track__price-block">
                             <div class="track__price">
                                 <div class="track__price-count">2990₽</div>

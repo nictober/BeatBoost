@@ -42,7 +42,12 @@
 @import "blocks/item-info.scss";
 @import "blocks/feed.scss";
 @import "blocks/comments.scss";
+@import "blocks/side-filter.scss";
 
+.track__cart-button > .track__price-dropdown-icon {
+    width: 18px;
+    height: 17px;
+}
 
 .section-divider {
     border-top: solid gray 1px;
@@ -56,55 +61,6 @@
     }
     &__track-time {
         flex-grow: 0;
-    }
-}
-
-.side-filter {
-    display: flex;
-    flex-direction: column;
-    background: #0F0F0F;
-    height: fit-content;
-    padding: 24px;
-    border-radius: 8px;
-    margin-right: 32px;
-
-    &__title {
-        font-weight: 600;
-        font-size: 20px;
-        margin-bottom: 24px;
-    }
-    &__types {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-    &__type {
-        padding: 18px 20px;
-        background: #1E1E1E;
-        font-weight: 600;
-        font-size: 14px;
-        border-radius: 4px;
-        width: 264px;
-
-        &_explore {
-            width: auto;
-        }
-    }
-    &__categories {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-    &__category {
-        padding: 10px;
-        background: #0F0F0F;
-        border-radius: 4px;
-        width: 121px;
-    }
-    &__subtitle {
-        padding-bottom: 8px;
-        margin-bottom: 8px;
-        border-bottom: 1px solid #0F0F0F;
     }
 }
 
@@ -144,12 +100,20 @@
     &__dropdowns-list {
         display: flex;
         gap: 24px;
+        // @include phones {
+        //     grid-area: 3 / 1 / 4 / 2;
+        //     flex-direction: column;
+        //     gap: 16px;
+        //     margin-bottom: 20px;
+        //     padding-top: 16px;
+        // }
+        //experemental
         @include phones {
-            grid-area: 3 / 1 / 4 / 2;
-            flex-direction: column;
-            gap: 16px;
-            margin-bottom: 20px;
-            padding-top: 16px;
+            flex-wrap: wrap;
+            grid-area: 2 / 1 / 3 / 3;
+            flex-direction: row;
+            gap: 8px;
+            margin-bottom: 12px;
         }
     }
     &__dropdown {
@@ -159,6 +123,10 @@
         border: 1px solid #0F0F0F;
         border-radius: 4px;
         background: #0F0F0F;
+        //experemental
+        @include phones {
+            width: fit-content;
+        }
     }
     &__name {
         color: #B8B8B8;
@@ -180,7 +148,11 @@
         @include phones {
             grid-area: 4 / 1 / 5 / 3;
             flex-wrap: wrap;
+            //experemental
+            gap: 8px;
         }
+
+
     }
     &__chosen-filter {
         display: flex;

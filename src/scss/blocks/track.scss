@@ -6,10 +6,13 @@
     padding: 12px;
     @include phones {
         display: grid;
-        grid-template-columns: 10% 90%;
-        grid-template-rows: 33% 16% 33%;
+        // grid-template-columns: 10% 90%;
+        // grid-template-rows: 33% 16% 33%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
         gap: 10px;
         align-items: inherit;
+        padding: 24px 24px 24px 8px;
     }
 
     &__number {
@@ -29,6 +32,17 @@
         flex-basis: 273px;
         flex-grow: 1;
         flex-shrink: 5;
+        font-weight: 500;
+        font-size: 14px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__time-mobile {
+        display: none;
+        @include phones {
+            display: block;
+        }
     }
     &__price-block {
         // flex-basis: 219px;
@@ -67,6 +81,7 @@
     &__title {
         font-weight: 600;
         font-size: 14px;
+        white-space: nowrap;
     }
     &__price-icon {
         display: flex;
@@ -109,11 +124,6 @@
         // height: 20px;
         padding: 4px;
     }
-    &__collection-name {
-        font-weight: 500;
-        font-size: 14px;
-        color: #B8B8B8;
-    }
     &__price {
         display: flex;
         align-items: center;
@@ -122,6 +132,10 @@
         padding: 6px 8px;
         gap: 12px;
         margin-right: 18px;
+        @include phones {
+            flex-wrap: wrap;
+            margin-right: 0;
+        }
         
         &-block {
         display: flex;
@@ -133,9 +147,13 @@
             display: flex;
             align-items: center;
             column-gap: 2px;
-            padding: 8px 10px;
+            // padding: 8px 10px;
+            padding: 10px; // new
             background: #1E1E1E;
             border-radius: 4px;
+            @include phones {
+                flex-grow: 1;
+            }
         }
     }
     &__add-cart-icon {
@@ -147,6 +165,10 @@
     }
     &__cart-button {
         background-color: #CA0000;
+        padding: 9px 10px; // new
+        @include phones {
+        }
+        justify-content: space-between;
     }
 
 }

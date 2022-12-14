@@ -13,9 +13,14 @@
 
     &__sign-in {
         @extend %media-tablets-none;
+        &:hover {
+            color: #3417EB;
+        }
     }
     &__register {
-
+        &:hover {
+            color: #3417EB;
+        }
         &::after {
             content: "/";
             // border-left: solid 1px white;

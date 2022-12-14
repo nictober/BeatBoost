@@ -1,10 +1,12 @@
 .button {
     border-radius: 4px;
-    background: $MainGradientRed;
-    padding: 12px;
+    background: #CA0000;
+    // padding: 12px;
+    padding: 14px 20px; //redesign
     font-weight: 700;
     color: #FFF;
     white-space: nowrap;
+    transition: background ease-in-out .3s;
     @include phones {
         font-size: 12px;
     }
@@ -16,13 +18,16 @@
     &_decorative-gray {
         display: flex;
         align-items: center;
-        background: #1E1E1E;
+        background: #0F0F0F;
         font-weight: 600;
         font-size: 14px;
     }
     &_transparent-red {
         background: transparent;
         border: solid 1px #CA0000;
+        &:hover {
+            background: #CA0000;
+        }
     }
     &_transparent-gray {
         background: transparent;
@@ -54,9 +59,16 @@
         padding: 8px 16px;
     }
     &_cart {
-        padding: 8px;
+        padding: 8px 8px 8px 6px;
         background: transparent;
         border: 1px solid #1E1E1E;;
+        @include phones {
+            border: none;
+            padding: 0;
+        }
+        &:hover {
+            background: #1E1E1E;
+        }
     }
     &_see-more {
         font-size: 12px;

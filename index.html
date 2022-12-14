@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="dist/main.css">
 </head>
 <body>
-
     <header class="header">
         <div class="header__side-wrapper">
-            <a href="#" class="header__logo">
+            <a href="./index.html" class="header__logo">
                 <img src="src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="header__logo-orig">
             </a>
-            <a href="#" class="header__logo-mobile">
-                <img src="src/img/svg/logo-mini.svg" alt="beatBoost logo" class="header__logo-orig">
-            </a>
+            <!-- <a href="./index.html" class="header__logo-mobile">
+                <img src="src/img/svg/logo-mobile.svg" alt="beatBoost logo" class="header__logo-orig">
+            </a> -->
             <div class="header__burger-menu burger-menu">
                 <div class="burger-menu__element1"></div>
                 <div class="burger-menu__element2"></div>
@@ -29,33 +28,33 @@
                     <input placeholder="Что вы ищете?" class="search-form__input" type="text">
                     <div class="search-form__categories">
                         <div class="search-form__category">Биты</div>
-                        <img src="src/img/svg/arrow-down.svg" alt="arrow down icon">
+                        <img src="src/img/svg/arrow-down-fullfilled-gray.svg" alt="arrow down icon">
                     </div>
                 </div>
             </form>
             <nav class="header__site-menu">
-                <ul class="site-menu">
+                <div class="site-menu">
                     <li class="site-menu__item">
-                        <a href="#" class="site-menu__link">Поиск</a>
+                        <a href="./pages/explore.html" class="site-menu__link">Поиск</a>
                     </li>
                     <li class="site-menu__item">
-                        <a href="#" class="site-menu__link">Лента</a>
+                        <a href="./pages/feed.html" class="site-menu__link">Лента</a>
                     </li>
                     <li class="site-menu__item">
-                        <a href="#" class="site-menu__link">Треки</a>
+                        <a href="./pages/track-page.html" class="site-menu__link">Треки</a>
                     </li>
                     <li class="site-menu__item">
-                        <a href="#" class="site-menu__link">Релизы</a>
+                        <a href="./pages/collection.html" class="site-menu__link">Релизы</a>
                     </li>
-                </ul>
+                </div>
             </nav>
         </div>
         <div class="header__side-wrapper">
             <div class="login-block">
-                <div class="login-block__register">Создать аккаунт</div>
-                <div class="login-block__sign-in">Войти</div>
+                <a href="./pages/register.html" class="login-block__register">Создать аккаунт</a>
+                <a href="./pages/login.html" class="login-block__sign-in">Войти</a>
             </div>
-            <div class="header__begin-button button">Начать продавать</div>
+            <a href="./pages/login.html" class="header__begin-button button">Начать продавать</a>
             <form class="search-form-mobile">
                 <div class="search-form__hint-block">
                     <!-- <img src="src/img/svg/search-icon.svg" alt="magnifier image"> -->
@@ -68,14 +67,13 @@
             </form>
             <div class="header__cart-vidget cart-vidget">
                 <img class="button button_cart" src="src/img/svg/cart-shopping.svg" alt="cart icon">
-                <!-- <div class="cart-vidget__counter">1</div>
-                <img src="src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon"> -->
+                <div class="cart-vidget__counter">1</div>
+                <img class="cart-vidget__arrow" src="src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
             </div>
         </div>
     </header>
 
     <div class="wrapper">
-
         <section class="hero">
             <div class="hero__announce">
                 <div class="hero__button button button_decorative-gray">
@@ -84,10 +82,10 @@
                 </div>
                 <h1 class="hero__title">Маркетплейс для продажи аудио-контента</h1>
                 <div class="hero__subtitle">Самый лучший способ продавать своё творчество в России, удобнейший способ искать свою музыку.</div>
-                <un class="hero__buttons">
-                    <li class="hero__button button button_red">Искать биты</li>
-                    <li class="hero__button button button_transparent-red">Войти</li>
-                </un>
+                <div class="hero__buttons">
+                    <a href="./pages/explore.html" class="hero__button button button_red">Искать биты</a>
+                    <a href="./pages/login.html" class="hero__button button button_transparent-red">Войти</a>
+                </div>
             </div>
             <div class="hero__playlist">
                 <div class="hero__playlist-cover">
@@ -226,7 +224,7 @@
                 </li>
             </ul>
             <div class="button-container">
-                <div class="button button_transparent-gray button_see-more">Увидеть больше</div>
+                <a href="./pages/explore.html" class="button button_transparent-gray button_see-more">Увидеть больше</a>
             </div>
         </section>
 
@@ -242,7 +240,6 @@
                 <ul class="genres__scrollblock scrollblock">
                     <li class="genres__card">
                         <img src="src/img/notVector/genres-hiphop.png" alt="genre-styled picture" class="genres__img">
-                        <!-- <div class="fokin_image"></div> -->
                         <div class="genres__button button">
                             <span class="genres__title">Hip-Hop</span>
                         </div>
@@ -267,7 +264,7 @@
                     </li>
                 </ul>
                 <div class="button-container">
-                    <div class="button button_transparent-gray button_see-more">Увидеть больше</div>
+                    <a href="./pages/explore.html" class="button button_transparent-gray button_see-more">Увидеть больше</a>
                 </div>
             </div>
             <div class="genres__genre-hashtag-block">
@@ -286,7 +283,7 @@
                     <li class="genres__hashtag button button_transparent-gray">#Rock</li>
                 </ul>
                 <div class="button-container">
-                    <div class="button button_transparent-gray button_see-more">Увидеть больше</div>
+                    <a href="./pages/explore.html" class="button button_transparent-gray button_see-more">Увидеть больше</a>
                 </div>
             </div>
         </section>
@@ -294,10 +291,10 @@
         <section class="authors">
             <div class="authors__top-content-wrapper">
                 <div class="authors__title page-title">Битмейкеры</div>
-                <div class="authors__navigation nav-arrows">
+                <!-- <div class="authors__navigation nav-arrows">
                     <img src="src/img/svg/arrow-left.svg" alt="navigation arrow icon" class="nav-arrows__left">
                     <img src="src/img/svg/arrow-left.svg" style="transform: rotate(0.5turn);" alt="navigation arrow icon">
-                </div>
+                </div> -->
             </div>
             <ul class="authors__scrollblock scrollblock">
                 <li class="authors__card">
@@ -331,6 +328,7 @@
                     <span class="authors__tagname">@MusicByMr</span>
                 </li>
             </ul>
+            <a href="./pages/beats.html" class="button button_transparent-gray button_see-more">Увидеть больше</a>
         </section>
 
         <article class="find-beats-promo">
@@ -343,7 +341,7 @@
                 <h2 class="find-beats-promo__title">Искать биты - это быстро и удобно</h2>
                 <div class="find-beats-promo__subtitle">Удобный поиск по тегам коллекций, исполнителей и битов: все в одном месте
                 </div>
-                <div class="find-beats-promo__button button">Искать биты</div>
+                <a href="./pages/beats.html" class="find-beats-promo__button button">Искать биты</a>
             </div>
         </article>
 
@@ -359,7 +357,7 @@
                         <div class="timeline-vidget__timeline"></div>
                         <div class="timeline-vidget__days-untill">Напишем на почту за 2 дня</div>
                     </div>
-                    <div class="buff-promo__button button">Узнать больше</div>
+                    <div class="buff-promo__button button">Запусти BeatBoost Buff</div>
                 </div>
             </div>
 
@@ -372,20 +370,19 @@
                 <div class="footer__top-wrapper">
                     <h4 class="footer__title">Начни сейчас ϟ</h4>
                     <div class="footer__button-wrapper">
-                        <a href="#" class="footer__login button button_red">Войти</a>
-                        <a href="#" class="footer__login button button_gray">Cоздать аккаунт</a>
+                        <a href="./pages/login.html" class="footer__login button button_red">Войти</a>
+                        <a href="./pages/register.html" class="footer__login button button_gray">Cоздать аккаунт</a>
                     </div>
                 </div>
-                <!-- <span class="footer__rights">© 2022 BeatBoost. Все права защищены</span> -->
             </div>
             <ul class="footer__link-blocks">
                 <li class="footer__link-block">
                     <h5 class="footer__link-title">BeatBoost</h5>
-                    <a href="#">Главная</a>
-                    <a href="#">Лента</a>
-                    <a href="#">Поиск</a>
-                    <a href="#">Треки</a>
-                    <a href="#">Коллекции</a>
+                    <a href="./index.html">Главная</a>
+                    <a href="./pages/feed.html">Лента</a>
+                    <a hhref="./pages/explore.html">Поиск</a>
+                    <a href="./pages/beats.html">Треки</a>
+                    <a href="./pages/collection.html">Коллекции</a>
                 </li>
                 <li class="footer__link-block">
                     <h5 class="footer__link-title">Социальные сети</h5>
@@ -397,15 +394,14 @@
                 <li class="footer__link-block">
                     <h5 class="footer__link-title">Помощь</h5>
                     <a href="#">BeatBoost Buff</a>
-                    <a href="#">Регистрация</a>
+                    <a href="./pages/register.html">Регистрация</a>
                     <a href="#">Цены</a>
                     <a href="#">FAQ</a>
-                    <a href="#">Войти</a>
+                    <a href="./pages/login.html">Войти</a>
                 </li>
             </ul>
             <div class="footer__side-block">
                 <img src="src/img/svg/beatBoost-logo.svg" alt="BeatBoost logo" class="footer__logo">
-                <!-- <span class="footer__privacy">Privacy Policy</span> -->
             </div>
         </div>
         <div class="footer__copyright-block">

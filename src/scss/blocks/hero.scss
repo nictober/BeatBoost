@@ -24,8 +24,11 @@
             max-width: 100%;
         }
     }
+    .button_decorative-gray {
+        margin-bottom: 8px;
+    }
     &__button {
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
     }
     &__playlist {
         position: relative;
@@ -92,8 +95,9 @@
         top: 324px;
         left: 30px;
         @include phones {
-            top: 170px;
-            left: 20px;
+            display: none;
+            // top: 170px;
+            // left: 20px;
         }
     }
     &__playlist-announce-button {

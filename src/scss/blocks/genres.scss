@@ -27,6 +27,10 @@
     &__scrollblock {
         gap: 16px;
         margin-bottom: 24px;
+        @include phones {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__card {
         position: relative;
@@ -53,6 +57,7 @@
         transform: translate(-50%, -50%);
         white-space: nowrap;
         z-index: 100;
+        padding: 10px 12px;
     }
     &__img {
         border-radius: 8px;

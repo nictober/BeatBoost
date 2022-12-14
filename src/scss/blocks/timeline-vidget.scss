@@ -5,17 +5,17 @@
 
     &__days-total {
         font-size: 12px;
-        font-weight: 400px;
+        font-weight: 700;
 
     }
     &__timeline {
         width: 100%;
         height: 4px;
-        background-color: white;
+        background: linear-gradient(to right, white 50%, #1E1E1E 50%);
     }
     &__days-untill {
         font-size: 10px;
-        font-weight: 700;
+        font-weight: 400;
         align-self: center;
         position: relative;
 

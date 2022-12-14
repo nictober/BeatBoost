@@ -12,7 +12,7 @@
     &>li {
         flex-shrink: 0;
         @include phones {
-            max-width: 141px;
+            // max-width: 141px;
         }
     }
 }

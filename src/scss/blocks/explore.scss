@@ -1,10 +1,15 @@
 .explore {
-    display: flex;
-    padding-top: 48px;
+    display: grid;
+    grid: auto auto auto/auto auto;
+    padding-top: 40px;
     padding-left: 120px;
 
     @include phones {
         padding-top: 24px;
+        //experemental
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
     }
 
     &__title {
@@ -57,7 +62,8 @@
         height: 56px;
         margin: 0 0 36px 0;
         @include phones {
-            width: 93%;
+            // width: 93%;
+            margin: 0 0 12px 0;
         }
 
         &::placeholder {

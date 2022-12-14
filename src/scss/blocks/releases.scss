@@ -10,6 +10,13 @@
     @include phones {
         padding: 20px;
     }
+
+    &__navigation {
+
+        @include phones {
+            display: none;
+        }
+    }
     &_profile {
         padding: 0;
         background: none;
@@ -31,18 +38,21 @@
                 width: 100%;
             }
         }
-        & .playlist__cover-shadow {
-            @include phones {
-                top: 30px;
-                left: 10px;
-                width: 92%;
-            }
-        }
+        // & .playlist__cover-shadow {
+        //     @include phones {
+        //         top: 30px;
+        //         left: 10px;
+        //         width: 92%;
+        //     }
+        // }
     }
 
     &__scrollblock {
         gap: 19px;
         flex-wrap: wrap;
+        @include phones {
+            overflow-x: visible;
+        }
     }
     &__top-content-wrapper {
         display: flex;
