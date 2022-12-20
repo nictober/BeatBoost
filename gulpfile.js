@@ -4,6 +4,8 @@ const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer')
 const sourceMaps =  require ('gulp-sourcemaps')
 const cleanCSS = require('gulp-clean-css')
+var browserify = require('gulp-browserify');
+
 
 var concat = require('gulp-concat');
  
@@ -46,3 +48,14 @@ task ('styles2', function() {
 task ('watch', function() {
     return watch('src/scss/**/*.scss', parallel('styles'))
 })
+
+task('browserify', (cb) => {
+  // Single entry point to browserify
+  gulp.src('src/scripts/app.js')
+      .pipe(browserify({
+        insertGlobals : true,
+        // debug : !gulp.env.production
+      }))
+      .pipe(gulp.dest('./dist'))
+      cb()
+});

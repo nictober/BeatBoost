@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
     <link rel="stylesheet" href="../dist/main.css">
+    <script src= "../dist/index.js" type="module"></script>
 </head>
-<body>
+<body id="transition_disabled">
 
     <div class="wrapper login-wrapper">
         <div class="login">
@@ -16,11 +17,11 @@
                 <img src="../src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="login__logo">
             </a>
             <span class="login__title">Создать аккаунт</span>
-            <form action="#" class="login__form">
-                <input placeholder="Придумайте имя" type="text" class="login__input">
-                <input placeholder="E-mail" type="text" class="login__input">
-                <input placeholder="Придумайте пароль" type="text" class="login__input">
-                <div class="login__button button button_login">Создать</div>
+            <form id="regForm" action="#" class="login__form">
+                <input name="name" placeholder="Придумайте имя" type="text" class="login__input">
+                <input name="email" placeholder="E-mail" type="text" class="login__input">
+                <input name="password" placeholder="Придумайте пароль" type="text" class="login__input">
+                <button type="submit" class="login__button button button_login">Создать</button>
                 <div class="login__hint">Уже есть аккаунт? <a class="login__to-login" href="./login.html">Войти</a></div>
             </form>
             <ul class="login__social-block">
@@ -42,9 +43,8 @@
             <img src="../src/img/notVector/login-page-pic.png" alt="login page pic">
         </div>
        
-    </div>    
+    </div>
 
-
-    <script src= "./dist/index.js" type="module"></script>
+    <script src= "../src/scripts/registration.js" type="module"></script>
 </body>
 </html>

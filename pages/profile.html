@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css"> <!-- static link to normalize.css -->
     <link rel="stylesheet" href="../dist/main.css">
+    <script src= "../dist/index.js" type="module"></script>
 </head>
-<body>
+<body id="transition_disabled">
 
     <header class="header">
         <div class="header__side-wrapper">
@@ -98,12 +99,12 @@
                 </div>
             </div>
             <ul class="profile__navigation">
-                <li class="profile__navigation-link profile__navigation-link_active">Общая информация</li>   
-                <li class="profile__navigation-link">История покупок</li>   
-                <li class="profile__navigation-link">Биты</li>   
-                <li class="profile__navigation-link">Коллекции</li>   
-                <li class="profile__navigation-link">Сэмплы</li>   
-                <li class="profile__navigation-link">Коллекция звуков</li>   
+                <li id="profileMain" class="profile__navigation-link profile__navigation-link_active">Общая информация</li>   
+                <li id="profileHistory" class="profile__navigation-link">История покупок</li>   
+                <li id="profileBeats" class="profile__navigation-link">Биты</li>   
+                <li id="profileCollections" class="profile__navigation-link">Коллекции</li>   
+                <li id="profileSamples" class="profile__navigation-link">Сэмплы</li>   
+                <li id="profileCollectionRelated"class="profile__navigation-link">Коллекция звуков</li>   
             </ul>
             <div class="profile__navigation-mobile-wrapper">
                 <div class="profile__navigation-mobile-subwrapper">
@@ -118,368 +119,371 @@
                     <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
                 </div>
             </div>
-            <div class="profile__general-info">
-                <ul class="profile__tracklist tracklist">
-                    <h3 class="profile__title">Биты</h3>
-                    <li class="tracklist__header">
-                        <div class="tracklist__header-elem">#</div>
-                        <div class="tracklist__header-elem">Название</div>
-                        <div class="tracklist__header-elem">Коллекция</div>
-                        <div class="tracklist__header-elem">Цена</div>
-                        <div class="tracklist__header-elem">Время</div>
-                    </li>
-                    <li class="tracklist__track track">
-                        <div class="track__number">1</div> 
-                        <div class="track__naming-wrapper">
-                            <div class="track__cover">
-                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
-                            </div>
-                            <div class="track__info">
-                                <div class="track__name-wrapper">
-                                    <h5 class="track__title">Arhvic Demolsih</h5>
-                                    <div class="track__price-icon">
-                                        <div class="track__price-icon-text">Free</div>
-                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+            <div id="changingElem">
+                <div class="profile__general-info">
+                    <ul class="profile__tracklist tracklist">
+                        <h3 class="profile__title">Биты</h3>
+                        <li class="tracklist__header">
+                            <div class="tracklist__header-elem">#</div>
+                            <div class="tracklist__header-elem">Название</div>
+                            <div class="tracklist__header-elem">Коллекция</div>
+                            <div class="tracklist__header-elem">Цена</div>
+                            <div class="tracklist__header-elem">Время</div>
+                        </li>
+                        <li class="tracklist__track track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
+                                </div>
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
                                     </div>
                                 </div>
-                                <div class="track__creator-wrapper">
-                                    <h5 class="track__creator">Russian Label</h5>
-                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                            </div>
+                            <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
+                            <div class="track__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                        <div class="track__price-dropdown-text">Track out</div>
+                                        <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
-                        <div class="track__price-block">
-                            <div class="track__price">
-                                <div class="track__price-count">2990₽</div>
-                                <div class="track__price-dropdown">
+                            <div class="track__time">3:03</div>
+                        </li>
+                        <li class="tracklist__track track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
+                                </div>
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
+                            <div class="track__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
                                     <div class="track__price-dropdown-text">Track out</div>
                                     <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                                <div class="track__price-dropdown track__cart-button">
-                                    <div class="track__price-dropdown-text">В корзину</div>
-                                    <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track__time">3:03</div>
-                    </li>
-                    <li class="tracklist__track track">
-                        <div class="track__number">1</div> 
-                        <div class="track__naming-wrapper">
-                            <div class="track__cover">
-                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
-                            </div>
-                            <div class="track__info">
-                                <div class="track__name-wrapper">
-                                    <h5 class="track__title">Arhvic Demolsih</h5>
-                                    <div class="track__price-icon">
-                                        <div class="track__price-icon-text">Free</div>
-                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                    </div>
+                                                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
                                     </div>
                                 </div>
-                                <div class="track__creator-wrapper">
-                                    <h5 class="track__creator">Russian Label</h5>
-                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
-                                </div>
                             </div>
-                        </div>
-                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
-                        <div class="track__price-block">
-                            <div class="track__price">
-                                <div class="track__price-count">2990₽</div>
-                                <div class="track__price-dropdown">
-                                <div class="track__price-dropdown-text">Track out</div>
-                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                            <div class="track__time">3:03</div>
+                        </li>
+                        <li class="tracklist__track track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
                                 </div>
-                                                                <div class="track__price-dropdown track__cart-button">
-                                    <div class="track__price-dropdown-text">В корзину</div>
-                                    <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track__time">3:03</div>
-                    </li>
-                    <li class="tracklist__track track">
-                        <div class="track__number">1</div> 
-                        <div class="track__naming-wrapper">
-                            <div class="track__cover">
-                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
-                            </div>
-                            <div class="track__info">
-                                <div class="track__name-wrapper">
-                                    <h5 class="track__title">Arhvic Demolsih</h5>
-                                    <div class="track__price-icon">
-                                        <div class="track__price-icon-text">Free</div>
-                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
                                     </div>
                                 </div>
-                                <div class="track__creator-wrapper">
-                                    <h5 class="track__creator">Russian Label</h5>
-                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
-                                </div>
                             </div>
-                        </div>
-                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
-                        <div class="track__price-block">
-                            <div class="track__price">
-                                <div class="track__price-count">2990₽</div>
-                                <div class="track__price-dropdown">
-                                <div class="track__price-dropdown-text">Track out</div>
-                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                                                                <div class="track__price-dropdown track__cart-button">
-                                    <div class="track__price-dropdown-text">В корзину</div>
-                                    <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track__time">3:03</div>
-                    </li>
-                    <li class="tracklist__track track">
-                        <div class="track__number">1</div> 
-                        <div class="track__naming-wrapper">
-                            <div class="track__cover">
-                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
-                            </div>
-                            <div class="track__info">
-                                <div class="track__name-wrapper">
-                                    <h5 class="track__title">Arhvic Demolsih</h5>
-                                    <div class="track__price-icon">
-                                        <div class="track__price-icon-text">Free</div>
-                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                            <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
+                            <div class="track__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                    <div class="track__price-dropdown-text">Track out</div>
+                                    <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
                                     </div>
                                 </div>
-                                <div class="track__creator-wrapper">
-                                    <h5 class="track__creator">Russian Label</h5>
-                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
-                                </div>
                             </div>
-                        </div>
-                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
-                        <div class="track__price-block">
-                            <div class="track__price">
-                                <div class="track__price-count">2990₽</div>
-                                <div class="track__price-dropdown">
-                                <div class="track__price-dropdown-text">Track out</div>
-                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                            <div class="track__time">3:03</div>
+                        </li>
+                        <li class="tracklist__track track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
                                 </div>
-                                                                <div class="track__price-dropdown track__cart-button">
-                                    <div class="track__price-dropdown-text">В корзину</div>
-                                    <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track__time">3:03</div>
-                    </li>
-                    <li class="tracklist__track track">
-                        <div class="track__number">1</div> 
-                        <div class="track__naming-wrapper">
-                            <div class="track__cover">
-                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
-                            </div>
-                            <div class="track__info">
-                                <div class="track__name-wrapper">
-                                    <h5 class="track__title">Arhvic Demolsih</h5>
-                                    <div class="track__price-icon">
-                                        <div class="track__price-icon-text">Free</div>
-                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
                                     </div>
                                 </div>
-                                <div class="track__creator-wrapper">
-                                    <h5 class="track__creator">Russian Label</h5>
-                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
-                                </div>
                             </div>
-                        </div>
-                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
-                        <div class="track__price-block">
-                            <div class="track__price">
-                                <div class="track__price-count">2990₽</div>
-                                <div class="track__price-dropdown">
-                                <div class="track__price-dropdown-text">Track out</div>
-                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                                                                <div class="track__price-dropdown track__cart-button">
-                                    <div class="track__price-dropdown-text">В корзину</div>
-                                    <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track__time">3:03</div>
-                    </li>
-                    <li class="tracklist__track track">
-                        <div class="track__number">1</div> 
-                        <div class="track__naming-wrapper">
-                            <div class="track__cover">
-                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
-                            </div>
-                            <div class="track__info">
-                                <div class="track__name-wrapper">
-                                    <h5 class="track__title">Arhvic Demolsih</h5>
-                                    <div class="track__price-icon">
-                                        <div class="track__price-icon-text">Free</div>
-                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                            <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
+                            <div class="track__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                    <div class="track__price-dropdown-text">Track out</div>
+                                    <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
                                     </div>
                                 </div>
-                                <div class="track__creator-wrapper">
-                                    <h5 class="track__creator">Russian Label</h5>
-                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
-                                </div>
                             </div>
-                        </div>
-                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
-                        <div class="track__price-block">
-                            <div class="track__price">
-                                <div class="track__price-count">2990₽</div>
-                                <div class="track__price-dropdown">
-                                <div class="track__price-dropdown-text">Track out</div>
-                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                            <div class="track__time">3:03</div>
+                        </li>
+                        <li class="tracklist__track track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
                                 </div>
-                                                                <div class="track__price-dropdown track__cart-button">
-                                    <div class="track__price-dropdown-text">В корзину</div>
-                                    <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track__time">3:03</div>
-                    </li>
-                    <li class="tracklist__track track">
-                        <div class="track__number">1</div> 
-                        <div class="track__naming-wrapper">
-                            <div class="track__cover">
-                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
-                            </div>
-                            <div class="track__info">
-                                <div class="track__name-wrapper">
-                                    <h5 class="track__title">Arhvic Demolsih</h5>
-                                    <div class="track__price-icon">
-                                        <div class="track__price-icon-text">Free</div>
-                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
                                     </div>
                                 </div>
-                                <div class="track__creator-wrapper">
-                                    <h5 class="track__creator">Russian Label</h5>
-                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
-                                </div>
                             </div>
-                        </div>
-                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
-                        <div class="track__price-block">
-                            <div class="track__price">
-                                <div class="track__price-count">2990₽</div>
-                                <div class="track__price-dropdown">
-                                <div class="track__price-dropdown-text">Track out</div>
-                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                                                                <div class="track__price-dropdown track__cart-button">
-                                    <div class="track__price-dropdown-text">В корзину</div>
-                                    <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track__time">3:03</div>
-                    </li>
-                    <li class="tracklist__track track">
-                        <div class="track__number">1</div> 
-                        <div class="track__naming-wrapper">
-                            <div class="track__cover">
-                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
-                            </div>
-                            <div class="track__info">
-                                <div class="track__name-wrapper">
-                                    <h5 class="track__title">Arhvic Demolsih</h5>
-                                    <div class="track__price-icon">
-                                        <div class="track__price-icon-text">Free</div>
-                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                            <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
+                            <div class="track__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                    <div class="track__price-dropdown-text">Track out</div>
+                                    <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
                                     </div>
                                 </div>
-                                <div class="track__creator-wrapper">
-                                    <h5 class="track__creator">Russian Label</h5>
-                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
-                                </div>
                             </div>
-                        </div>
-                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
-                        <div class="track__price-block">
-                            <div class="track__price">
-                                <div class="track__price-count">2990₽</div>
-                                <div class="track__price-dropdown">
-                                <div class="track__price-dropdown-text">Track out</div>
-                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                            <div class="track__time">3:03</div>
+                        </li>
+                        <li class="tracklist__track track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
                                 </div>
-                                                                <div class="track__price-dropdown track__cart-button">
-                                    <div class="track__price-dropdown-text">В корзину</div>
-                                    <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track__time">3:03</div>
-                    </li>
-                    <li class="tracklist__track track">
-                        <div class="track__number">1</div> 
-                        <div class="track__naming-wrapper">
-                            <div class="track__cover">
-                                <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
-                            </div>
-                            <div class="track__info">
-                                <div class="track__name-wrapper">
-                                    <h5 class="track__title">Arhvic Demolsih</h5>
-                                    <div class="track__price-icon">
-                                        <div class="track__price-icon-text">Free</div>
-                                        <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
                                     </div>
                                 </div>
-                                <div class="track__creator-wrapper">
-                                    <h5 class="track__creator">Russian Label</h5>
-                                    <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                            </div>
+                            <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
+                            <div class="track__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                    <div class="track__price-dropdown-text">Track out</div>
+                                    <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__time">3:03</div>
+                        </li>
+                        <li class="tracklist__track track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
+                                </div>
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
+                            <div class="track__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                    <div class="track__price-dropdown-text">Track out</div>
+                                    <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__time">3:03</div>
+                        </li>
+                        <li class="tracklist__track track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
+                                </div>
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
+                            <div class="track__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                    <div class="track__price-dropdown-text">Track out</div>
+                                    <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__time">3:03</div>
+                        </li>
+                        <li class="tracklist__track track">
+                            <div class="track__number">1</div> 
+                            <div class="track__naming-wrapper">
+                                <div class="track__cover">
+                                    <img class="track__img" src="../src/img/notVector/track-cover.png" alt="track cover image">
+                                </div>
+                                <div class="track__info">
+                                    <div class="track__name-wrapper">
+                                        <h5 class="track__title">Arhvic Demolsih</h5>
+                                        <div class="track__price-icon">
+                                            <div class="track__price-icon-text">Free</div>
+                                            <img src="../src/img/svg/download-icon.svg" alt="download icon" class="track__price-icon-img">
+                                        </div>
+                                    </div>
+                                    <div class="track__creator-wrapper">
+                                        <h5 class="track__creator">Russian Label</h5>
+                                        <img src="../src/img/svg/star-icon.svg" alt="star icon" class="track__favorite-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
+                            <div class="track__price-block">
+                                <div class="track__price">
+                                    <div class="track__price-count">2990₽</div>
+                                    <div class="track__price-dropdown">
+                                    <div class="track__price-dropdown-text">Track out</div>
+                                    <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                                                    <div class="track__price-dropdown track__cart-button">
+                                        <div class="track__price-dropdown-text">В корзину</div>
+                                        <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track__time">3:03</div>
+                        </li>
+                    </ul>
+                    <div class="profile__side-container">
+                        <h3 class="profile__title">Последний релиз</h3>
+                        <div class="playlist profile__playlist">
+                            <div style="position: relative;" class="playlist__img-complex">
+                                <img src="../src/img/notVector/heartless-cover-releases.png" alt="daily playlist cover image" class="playlist__cover profile__playlist-cover">
+                                <div class="playlist__shadow-container profile__playlist-shadow-container">
+                                    <img src="../src/img/svg/releases-shadow-red.svg" alt="shadow image" class="playlist__cover-shadow profile__playlist-cover-shadow">
+                                </div>
+                            </div>
+                            <div class="playlist__text-container">
+                                <ul class="playlist__info playlist__info_hero">
+                                    <div class="playlist__about">
+                                    <div class="playlist__type">Коллекция</div>
+                                        <div class="playlist__title">Arhvic</div>
+                                        <div class="playlist__author">Damon Liver</div>
+                                    </div>
+                                </ul>
+                                <div class="playlist__statistic">
+                                    <div class="playlist__track-count">26 tracks</div>
+                                    <img src="../src/img/svg/lightning-white-views.svg" alt="BeatBoost gray lightning">
+                                    <div class="playlist__views-count">1231 views</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="track__collection-name">Arhvic Live <div class="track__time-mobile">3:03</div></div>
-                        <div class="track__price-block">
-                            <div class="track__price">
-                                <div class="track__price-count">2990₽</div>
-                                <div class="track__price-dropdown">
-                                <div class="track__price-dropdown-text">Track out</div>
-                                <img src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                                                                <div class="track__price-dropdown track__cart-button">
-                                    <div class="track__price-dropdown-text">В корзину</div>
-                                    <img src="../src/img/svg/cart-plus-icon.svg" alt="arrow down icon" class="track__price-dropdown-icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track__time">3:03</div>
-                    </li>
-                </ul>
-                <div class="profile__side-container">
-                    <h3 class="profile__title">Последний релиз</h3>
-                    <div class="playlist profile__playlist">
-                        <div style="position: relative;" class="playlist__img-complex">
-                            <img src="../src/img/notVector/heartless-cover-releases.png" alt="daily playlist cover image" class="playlist__cover profile__playlist-cover">
-                            <div class="playlist__shadow-container profile__playlist-shadow-container">
-                                <img src="../src/img/svg/releases-shadow-red.svg" alt="shadow image" class="playlist__cover-shadow profile__playlist-cover-shadow">
-                            </div>
-                        </div>
-                        <div class="playlist__text-container">
-                            <ul class="playlist__info playlist__info_hero">
-                                <div class="playlist__about">
-                                <div class="playlist__type">Коллекция</div>
-                                    <div class="playlist__title">Arhvic</div>
-                                    <div class="playlist__author">Damon Liver</div>
-                                </div>
-                            </ul>
-                            <div class="playlist__statistic">
-                                <div class="playlist__track-count">26 tracks</div>
-                                <img src="../src/img/svg/lightning-white-views.svg" alt="BeatBoost gray lightning">
-                                <div class="playlist__views-count">1231 views</div>
-                            </div>
-                        </div>
+                        
                     </div>
-                    
                 </div>
             </div>
+
             <div class="profile__releases releases releases_profile">
                 <div class="releases__top-content-wrapper">
                     <h2 class="releases__title page-title">Релизы</h2>
@@ -736,6 +740,7 @@
         </div>
     </footer>
     
-    <script src= "./dist/index.js" type="module"></script>
+
+    <script src= "../src/scripts/profileNav.js" type="module"></script>
 </body>
 </html>
