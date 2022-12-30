@@ -1,8 +1,9 @@
 .login-block {
     display: flex;
+    justify-self: end;
     font-weight: 500;
     font-size: 10px;
-    margin-right: 32px;
+    margin-right: 16px;
     // gap: 14px;
     position: relative;
     white-space: nowrap;

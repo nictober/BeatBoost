@@ -21,8 +21,12 @@
             <span class="login__title">Вход</span>
             <form id="loginForm" action="#" class="login__form">
                 <input name="name" placeholder="Ваше имя" type="text" class="login__input">
-                <!-- <input name="email" placeholder="E-mail" type="text" class="login__input"> -->
-                <input name="password" placeholder="Введите пароль" type="text" class="login__input">
+                <div class="login__input form__password-wrapper">
+                    <input name="password" placeholder="Придумайте пароль" type="password" class="login__input login__input_password form__password-input">
+                    <div id="hider" class="form__password-hider">
+                        <img src="../src/img/svg/hider-icon.svg"></img>
+                    </div>
+                </div>
                 <button type="submit" class="login__button button button_login">Войти</button>
                 <div class="login__hint">Еще нет аккаунта? <a class="login__to-login" href="./register.html">Регистрация</a></div>
             </form>
@@ -47,5 +51,6 @@
     </div>    
 
     <script src= "../src/scripts/login.js" type="module"></script>
+    <script src= "../src/scripts/passwordHideBtn.js" type="module"></script>
 </body>
 </html>

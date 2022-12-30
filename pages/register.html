@@ -10,7 +10,6 @@
     <script src= "../dist/index.js" type="module"></script>
 </head>
 <body id="transition_disabled">
-
     <div class="wrapper login-wrapper">
         <div class="login">
             <a href="../index.html" class="login__logo-wrap">
@@ -20,7 +19,12 @@
             <form id="regForm" action="#" class="login__form">
                 <input name="name" placeholder="Придумайте имя" type="text" class="login__input">
                 <input name="email" placeholder="E-mail" type="text" class="login__input">
-                <input name="password" placeholder="Придумайте пароль" type="text" class="login__input">
+                <div class="login__input form__password-wrapper">
+                    <input name="password" placeholder="Придумайте пароль" type="password" class="login__input login__input_password form__password-input">
+                    <div id="hider" class="form__password-hider">
+                        <img src="../src/img/svg/hider-icon.svg"></img>
+                    </div>
+                </div>
                 <button type="submit" class="login__button button button_login">Создать</button>
                 <div class="login__hint">Уже есть аккаунт? <a class="login__to-login" href="./login.html">Войти</a></div>
             </form>
@@ -46,5 +50,6 @@
     </div>
 
     <script src= "../src/scripts/registration.js" type="module"></script>
+    <script src= "../src/scripts/passwordHideBtn.js" type="module"></script>
 </body>
 </html>

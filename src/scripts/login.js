@@ -4,7 +4,7 @@ const formElem = document.getElementById('loginForm');
 formElem.onsubmit = async (e) => { 
     e.preventDefault();
     
-    let response = await fetch('https://api.beatboost.ru/v1/reg', {
+    let response = await fetch('https://api.beatboost.ru/v1/auth', {
       method: 'POST',
       body: new FormData(formElem)
     });

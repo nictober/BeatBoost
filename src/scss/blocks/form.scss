@@ -1,0 +1,15 @@
+.form {
+
+    &__password-wrapper {
+        display: flex;
+        position: relative;
+    }
+    &__password-input {
+       padding: 0;
+    }
+    &__password-hider {
+        display: flex;
+        // padding: 0 10px 0 0;
+        cursor: pointer;
+    }
+}

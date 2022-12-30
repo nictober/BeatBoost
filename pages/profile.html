@@ -12,66 +12,61 @@
 <body id="transition_disabled">
 
     <header class="header">
-        <div class="header__side-wrapper">
-            <a href="../index.html" class="header__logo">
-                <img src="../src/img/svg/beatBoost-logo.svg" alt="beatBoost logo" class="header__logo-orig">
-            </a>
-            <!-- <a href="./html" class="header__logo-mobile">
-                <img src="../src/img/svg/logo-mobile.svg" alt="beatBoost logo" class="header__logo-orig">
-            </a> -->
-            <div class="header__burger-menu burger-menu">
-                <div class="burger-menu__element1"></div>
-                <div class="burger-menu__element2"></div>
-                <div class="burger-menu__element3"></div>
-            </div>
-            <form class="search-form">
-                <div class="search-form__hint-block">
-                    <!-- <img src="../src/img/svg/search-icon.svg" alt="magnifier image"> -->
-                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
-                    <div class="search-form__categories">
-                        <div class="search-form__category">Биты</div>
-                        <img src="../src/img/svg/arrow-down-fullfilled-gray.svg" alt="arrow down icon">
-                    </div>
-                </div>
-            </form>
-            <nav class="header__site-menu">
-                <div class="site-menu">
-                    <li class="site-menu__item">
-                        <a href="./explore.html" class="site-menu__link">Поиск</a>
-                    </li>
-                    <li class="site-menu__item">
-                        <a href="./feed.html" class="site-menu__link">Лента</a>
-                    </li>
-                    <li class="site-menu__item">
-                        <a href="./track-page.html" class="site-menu__link">Треки</a>
-                    </li>
-                    <li class="site-menu__item">
-                        <a href="./collection.html" class="site-menu__link">Релизы</a>
-                    </li>
-                </div>
-            </nav>
+        <a href="./index.html" class="header__logo">
+            <picture>
+                <source media="(min-width: 1260px)" srcset="../src/img/svg/logo-main-big.svg 1x">
+                <source media="(min-width: 321px)" srcset="../src/img/svg/logo-mini.svg 1x">
+                <source media="(max-width: 320px)" srcset="../src/img/svg/logo-mobile.svg 1x">
+                <img src="../src/img/svg/beatBoost-logo.svg" alt="beatBoost-logo">
+            </picture>
+        </a>
+        <div class="header__burger burger-open" id="burger-open">
+            <div class="burger__element1"></div>
+            <div class="burger__element2"></div>
+            <div class="burger__element3"></div>
         </div>
-        <div class="header__side-wrapper">
-            <div class="login-block">
-                <a href="./register.html" class="login-block__register">Создать аккаунт</a>
-                <a href="./login.html" class="login-block__sign-in">Войти</a>
-            </div>
-            <a href="./login.html" class="header__begin-button button">Начать продавать</a>
-            <form class="search-form-mobile">
-                <div class="search-form__hint-block">
-                    <!-- <img src="../src/img/svg/search-icon.svg" alt="magnifier image"> -->
-                    <input placeholder="Что вы ищете?" class="search-form__input" type="text">
-                    <div class="search-form__categories">
+        <form class="search-form">
+            <div class="search-form__hint-block">
+                <input placeholder="Что вы ищете?" class="search-form__input" type="text">
+                <div id="dropdown-container" class="search-form__dropdown-container">
+                    <div id="chosen-category" class="search-form__categories">
                         <div class="search-form__category">Биты</div>
-                        <img src="../src/img/svg/arrow-down.svg" alt="arrow down icon">
+                        <img src="../src/img/svg/search-icon-hollow.svg" alt="arrow down icon">
                     </div>
+                    <ul class="search-form__categories-dropdown" id="category-list">
+                        <li><a class="search-form__category" href="#">Биты</a></li>
+                        <li><a class="search-form__category" href="#">Звуки</a></li>
+                        <li><a class="search-form__category" href="#">Коллекции</a></li>
+                        <li><a class="search-form__category" href="#">Люди</a></li>
+                    </ul>
                 </div>
-            </form>
-            <div class="header__cart-vidget cart-vidget">
-                <img class="button button_cart" src="../src/img/svg/cart-shopping.svg" alt="cart icon">
-                <div class="cart-vidget__counter">1</div>
-                <img class="cart-vidget__arrow" src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
             </div>
+        </form>
+        <nav class="header__site-menu">
+            <div class="site-menu">
+                <li class="site-menu__item">
+                    <a href="./explore.html" class="site-menu__link">Поиск</a>
+                </li>
+                <li class="site-menu__item">
+                    <a href="./feed.html" class="site-menu__link">Лента</a>
+                </li>
+                <li class="site-menu__item">
+                    <a href="./track-page.html" class="site-menu__link">Треки</a>
+                </li>
+                <li class="site-menu__item">
+                    <a href="./collection.html" class="site-menu__link">Релизы</a>
+                </li>
+            </div>
+        </nav>
+        <div class="login-block">
+            <a href="./register.html" class="login-block__register">Создать аккаунт</a>
+            <a href="./login.html" class="login-block__sign-in">Войти</a>
+        </div>
+        <a href="./login.html" class="header__begin-button button">Начать продавать</a>
+        <div class="header__cart-vidget cart-vidget">
+            <img class="button button_cart" src="../src/img/svg/cart-shopping.svg" alt="cart icon">
+            <div class="cart-vidget__counter">1</div>
+            <img class="cart-vidget__arrow" src="../src/img/svg/arrow-down-fulfilled.svg" alt="arrow down icon">
         </div>
     </header>
     <div class="wrapper">
