@@ -1,21 +1,25 @@
+import {isJWT}  from "./isJWT.js"
  // извлекаем элемент формы
-const formElem = document.getElementById('regForm');
+const formElem = document.getElementById("regForm")
 //отправляем объект с данными из формы на сервер
 formElem.onsubmit = async (e) => { 
-    e.preventDefault();
+    e.preventDefault()
 
-    let response = await fetch('https://api.beatboost.ru/v1/reg', {
-      method: 'POST',
-      body: new FormData(formElem)
-    });
+    const FormData = new FormData(formElem)
 
-    let result = await response.json();
+    fetch("https://api.beatboost.ru/v1/reg", {
+      method: "POST",
+      headers: {
+        "Access-Control-Allow-Origin": "https://api.beatboost.ru"
+      },
+      body: FormData
+    })
 
-    //в случае успеха перебрасываем пользователя на сайт 
-    if (result.ok) {
-        alert("Аккаунт зарегистрирован"); 
-        window.location.href = './login.html'; //на страницу логина
+    //в случае наличия JWT в куки перебрасываем пользователя на сайт 
+    if (isJWT()) {
+        alert("Аккаунт зарегистрирован")
+        window.location.href = "../../index.html"
     } else {
-        alert("Ошибка"); 
+        alert("Ошибка")
     }
-};
+}

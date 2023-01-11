@@ -1,20 +1,22 @@
+import {isJWT}  from "./isJWT.js"
 // извлекаем элемент формы
-const formElem = document.getElementById('loginForm'); 
+const formElem = document.getElementById("loginForm"); 
 //отправляем объект с данными из формы на сервер
 formElem.onsubmit = async (e) => { 
     e.preventDefault();
     
-    let response = await fetch('https://api.beatboost.ru/v1/auth', {
-      method: 'POST',
+    let response = await fetch("https://api.beatboost.ru/v1/auth", {
+      method: "POST",
       body: new FormData(formElem)
-    });
+    })
 
     let result = await response.json();
 
     //в случае успеха перебрасываем пользователя на сайт 
-    if (result.ok) {
-        window.location.href = '../dist/index.html';
+    if (isJWT()) {
+        window.location.href = "../../index.html"
     } else {
-        alert("пользователь не найден"); 
+        alert("пользователь не найден")
     }
-};
+
+}
