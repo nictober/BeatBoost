@@ -10,13 +10,10 @@ formElem.onsubmit = async (e) => {
       body: new FormData(formElem)
     })
 
-    let result = await response.json();
-
     //в случае успеха перебрасываем пользователя на сайт 
     if (isJWT()) {
         window.location.href = "../../index.html"
     } else {
         alert("пользователь не найден")
     }
-
 }

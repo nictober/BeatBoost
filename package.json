@@ -7,7 +7,9 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.39.2"
+    "sass": "^1.39.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "name": "cells-app",
   "version": "1.0.0",
@@ -21,6 +23,7 @@
   "dependencies": {
     "browserify": "^17.0.0",
     "jquery": "^3.6.2",
+    "jwt-decode": "^3.1.2",
     "normalize.css": "^8.0.1"
   }
 }

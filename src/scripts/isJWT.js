@@ -1,6 +1,6 @@
 // возвращает куки с указанным name,
 // или undefined, если ничего не найдено
-function getCookie(name) {
+export function getCookie(name) {
     let matches = document.cookie.match(new RegExp(
       "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
     ))

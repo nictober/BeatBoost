@@ -1,9 +1,15 @@
-.nav-arrows {
-    display: flex;
+.nav-arrow {
+    // display: flex;
+    padding: 2px;
 
     &>img{
         @include phones {
             width: 24px;
         }
+    }
+
+    &:hover {
+        background: #CA0000;
+        border-radius: 8px;
     }
 }

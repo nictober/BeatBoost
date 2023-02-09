@@ -1,4 +1,5 @@
 import {isJWT}  from "./isJWT.js"
+console.log(isJWT)
  // извлекаем элемент формы
 const formElem = document.getElementById("regForm")
 //отправляем объект с данными из формы на сервер
